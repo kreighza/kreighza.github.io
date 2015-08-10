@@ -23,7 +23,7 @@
   font-weight: normal;
   font-style: normal; }
 .font-regular {
-  font-family: "SourceSansPro", serif; }
+  font-family: "SourceSansPro", Helvetica, Arial, sans-serif; }
 
 .uk-navbar-nav > li > a,
 .uk-navbar-content {
