@@ -1,0 +1,15 @@
+{
+  "name": "kreisa",
+  "version": "1",
+  "homepage": "https://github.com/kreighza/kreighza.github.io",
+  "description": "my profile",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
