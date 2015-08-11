@@ -1,32 +1,24 @@
-@font-face {
-  font-family: 'SourceSansPro';
-  src: url("/fonts/source-sans-pro/SourceSansPro-Regular.otf");
-  src: url("/fonts/source-sans-pro/sourcesanspro-regular.eot?#iefix") format("embedded-opentype"), url("/fonts/source-sans-pro/sourcesanspro-regular.woff") format("woff"), url("/fonts/source-sans-pro/sourcesanspro-regular.ttf") format("truetype"), url("/fonts/source-sans-pro/sourcesanspro-regular.svg#sourcesanspro-regular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'SourceSansProExtraLight';
-  src: url("/fonts/source-sans-pro/sourcesanspro-extralight.eot");
-  src: url("/fonts/source-sans-pro/sourcesanspro-extralight.eot?#iefix") format("embedded-opentype"), url("/fonts/source-sans-pro/sourcesanspro-extralight.woff") format("woff"), url("/fonts/source-sans-pro/sourcesanspro-extralight.ttf") format("truetype"), url("/fonts/source-sans-pro/sourcesanspro-extralight.svg#sourcesanspro-extralight") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'SourceSansProBold';
-  src: url("/fonts/source-sans-pro/sourcesanspro-bold.eot");
-  src: url("/fonts/source-sans-pro/sourcesanspro-bold.eot?#iefix") format("embedded-opentype"), url("/fonts/source-sans-pro/sourcesanspro-bold.woff") format("woff"), url("/fonts/source-sans-pro/sourcesanspro-bold.ttf") format("truetype"), url("/fonts/source-sans-pro/sourcesanspro-bold.svg#sourcesanspro-bold") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'SourceSansProSemiBold';
-  src: url("/fonts/source-sans-pro/sourcesanspro-semibold.eot");
-  src: url("/fonts/source-sans-pro/sourcesanspro-semibold.eot?#iefix") format("embedded-opentype"), url("/fonts/source-sans-pro/sourcesanspro-semibold.woff") format("woff"), url("/fonts/source-sans-pro/sourcesanspro-semibold.ttf") format("truetype"), url("/fonts/source-sans-pro/sourcesanspro-semibold.svg#sourcesanspro-semibold") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-.font-regular {
-  font-family: "SourceSansPro", Helvetica, Arial, sans-serif; }
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200);
+.font-family-regular a,
+.font-family-regular ul li a,
+.font-family-regular {
+  font-family: "Source Sans Pro", serif; }
+
+.font-family-light {
+  font-family: "Source Sans Pro", serif;
+  font-weight: 200; }
+
+.font-size-big {
+  font-size: 40pt; }
+
+.m-t-60 {
+  margin-top: 60px; }
 
 .uk-navbar-nav > li > a,
 .uk-navbar-content {
   height: 60px;
   padding: 0 15px;
   line-height: 60px; }
+
+a:hover {
+  text-decoration: none; }
