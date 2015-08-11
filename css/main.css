@@ -39,14 +39,34 @@
 .m-t-60 {
   margin-top: 60px; }
 
+.m-t-100 {
+  margin-top: 100px; }
+
 /* Backgrounds
  ========================================================================== */
 .bg-black {
   background: #1D1F21; }
 
+/* Lists
+ ========================================================================== */
+.inline-list li {
+  display: inline; }
+
+ul.inline-list {
+  list-style-type: none; }
+
+ul.list-m-20 li {
+  margin: 20px; }
+
 body, h1, h2, h3, h4, h5, h6,
 .uk-navbar-nav > li > a {
   font-family: "Source Sans Pro", serif; }
+
+a {
+  color: #383D41; }
+
+a:hover {
+  color: #0AC5E6; }
 
 /* Base
  ========================================================================== */
