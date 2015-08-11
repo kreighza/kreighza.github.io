@@ -1,10 +1,12 @@
-.font-regular {
+.font-family-regular {
     font-family: $base-font-family;
 }
 
-.uk-navbar-nav > li > a,
-.uk-navbar-content{
-  height: 60px;
-  padding: 0 15px;
-  line-height: 60px;
+.font-family-light {
+    font-family: $base-font-family;
+    font-weight: 200;
+}
+
+.font-size-big {
+    font-size: 40pt;
 }
