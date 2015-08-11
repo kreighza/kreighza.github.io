@@ -33,7 +33,6 @@
 
 /* Font Colors
  ========================================================================== */
-
 .font-color-blue {
     color: $blue;   
 }
@@ -60,7 +59,13 @@
 /* Backgrounds
  ========================================================================== */
 .bg-black {
-    background: #1D1F21;
+    background: $black;
+}
+
+.bg-stars {
+    background: url($img-stars);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 /* Lists

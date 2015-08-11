@@ -4,6 +4,12 @@ body, h1, h2, h3, h4, h5, h6,
 a { color: $black;}
 a:hover { color: $blue;}
 
+.uk-navbar-nav>li.uk-active>a,
+.uk-navbar-nav>li>a:hover{
+    background-color: transparent;
+    border-bottom: 3px solid $blue;
+}
+
 /* Base
  ========================================================================== */
 
