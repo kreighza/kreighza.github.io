@@ -1,6 +1,10 @@
 .uk-navbar-nav > li > a,
 .uk-navbar-content{
-  height: 60px;
-  padding: 0 15px;
-  line-height: 60px;
+    height: $nav-height;
+    padding: 0 15px;
+    line-height: $nav-height;
+}
+
+a:hover {
+    text-decoration: none;
 }

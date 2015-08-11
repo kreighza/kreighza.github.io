@@ -1,3 +1,5 @@
+.font-family-regular a, 
+.font-family-regular ul li a, 
 .font-family-regular {
     font-family: $base-font-family;
 }
@@ -9,4 +11,8 @@
 
 .font-size-big {
     font-size: 40pt;
+}
+
+.m-t-60 {
+    margin-top: $nav-height;
 }
