@@ -45,7 +45,12 @@
 /* Backgrounds
  ========================================================================== */
 .bg-black {
-  background: #1D1F21; }
+  background: #383D41; }
+
+.bg-stars {
+  background: url("../images/bg-stars.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat; }
 
 /* Lists
  ========================================================================== */
@@ -67,6 +72,11 @@ a {
 
 a:hover {
   color: #0AC5E6; }
+
+.uk-navbar-nav > li.uk-active > a,
+.uk-navbar-nav > li > a:hover {
+  background-color: transparent;
+  border-bottom: 3px solid #0AC5E6; }
 
 /* Base
  ========================================================================== */
