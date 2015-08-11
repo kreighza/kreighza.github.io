@@ -6,9 +6,21 @@ layout: default
         
         <img class="uk-border-circle" src="/images/profile-photo.jpg" width="250" height="250" title="profile-photo" alt="profile-photo">
         <div class="uk-heading-large uppercase m-t-60">{{ site.title }}</div>
-        <div class="uppercase font-size-medium"> {{ site.job_title }} </div>
-        
-    
+        <div class="uppercase font-size-regular"> {{ site.job_title1 }} & {{ site.job_title2 }} </div>
+        <div class="uppercase font-size-regular"> {{ site.current_location }} </div>
+
+        <ul class="inline-list list-m-20 m-t-100" style="padding-left: 0px;">
+            <li>
+                <a href="{{ site.github }}" target="_blank"> <i class="uk-icon-github-square uk-icon-medium"></i></a>
+            </li>
+            <li>
+                <a href="{{ site.gitlab }}" target="_blank"> <i class="uk-icon-git-square uk-icon-medium"></i></a>
+            </li>
+            <li>
+                <a href="{{ site.linkedin }}" target="_blank"><i class="uk-icon-linkedin-square uk-icon-medium"></i></a>
+            </li>
+        </ul>
+            
     </div>
 </div>
 
