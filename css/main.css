@@ -1,4 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200);
+/* Font Family
+ ========================================================================== */
 .font-family-regular a,
 .font-family-regular ul li a,
 .font-family-regular {
@@ -8,12 +10,77 @@
   font-family: "Source Sans Pro", serif;
   font-weight: 200; }
 
+/* Font Size
+ ========================================================================== */
 .font-size-big {
-  font-size: 40pt; }
+  font-size: 40px; }
 
+.font-size-medium {
+  font-size: 30px; }
+
+.font-size-regular {
+  font-size: 20px; }
+
+.font-size-small {
+  font-size: 10px; }
+
+/* Font Colors
+ ========================================================================== */
+.font-color-blue {
+  color: #0AC5E6; }
+
+/* Font Effects
+ ========================================================================== */
+.uppercase {
+  text-transform: uppercase; }
+
+/* Margins
+ ========================================================================== */
 .m-t-60 {
   margin-top: 60px; }
 
+/* Backgrounds
+ ========================================================================== */
+.bg-black {
+  background: #1D1F21; }
+
+body, h1, h2, h3, h4, h5, h6,
+.uk-navbar-nav > li > a {
+  font-family: "Source Sans Pro", serif; }
+
+/* Base
+ ========================================================================== */
+html {
+  overflow-y: scroll;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* Layout
+ ========================================================================== */
+.kr-background {
+  background: #0AC5E6; }
+
+/*
+ * Blocks
+ */
+.kr-middle,
+.kr-section,
+.kr-footer {
+  padding: 50px 0;
+  height: 100%; }
+
+/* Tablet and bigger */
+@media (min-width: 768px) {
+  .kr-middle,
+  .kr-section,
+  .kr-footer {
+    padding: 90px 0; } }
+/* Large screen and bigger */
+@media (min-width: 1220px) {
+  .kr-middle,
+  .kr-section,
+  .kr-footer {
+    padding: 120px 0; } }
 .uk-navbar-nav > li > a,
 .uk-navbar-content {
   height: 60px;
