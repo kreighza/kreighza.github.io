@@ -73,10 +73,19 @@
     margin-top: 100px;
 }
 
+.m-0 {
+    margin: 0;
+}
+
 /* Backgrounds
  ========================================================================== */
 .bg-black {
     background: $black;
+}
+
+.bg-blue {
+    background: $blue;
+    background-color: $blue;
 }
 
 .bg-stars {
