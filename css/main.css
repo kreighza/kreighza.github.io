@@ -24,10 +24,24 @@
 .font-size-small {
   font-size: 10px; }
 
+/* Font Weight
+ ========================================================================== */
+.font-weight-400 {
+  font-weight: 400; }
+
+.font-weight-300 {
+  font-weight: 300; }
+
+.font-weight-200 {
+  font-weight: 200; }
+
 /* Font Colors
  ========================================================================== */
 .font-color-blue {
   color: #0AC5E6; }
+
+.font-color-white {
+  color: #FFFFFF; }
 
 /* Font Effects
  ========================================================================== */
@@ -51,6 +65,21 @@
   background: url("../images/bg-stars.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat; }
+
+.bg-work {
+  height: 40%;
+  background-image: url("../images/work.jpg"); }
+
+/* Overlays 
+ ========================================================================== */
+.blue-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(70, 141, 164, 0.5);
+  z-index: 99; }
 
 /* Lists
  ========================================================================== */
