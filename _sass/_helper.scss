@@ -70,7 +70,7 @@
 }
 
 .m-t-100 {
-    margin-top: 100px;
+    margin-top: 100px !important;
 }
 
 .m-0 {
@@ -97,6 +97,11 @@
 .bg-work {
     height: 40%; 
     background-image: url($img-work);
+}
+
+.bg-skill {
+    height: 40%; 
+    background-image: url($img-skill);
 }
 
 .bg-light-grey {
@@ -143,4 +148,36 @@ ul.list-m-20 li {
  ========================================================================== */
 .l-h-50 {
     line-height: 50px;
+}
+
+/* Filters
+ ========================================================================== */
+.filter-grey {
+    -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+.filter-grey:hover {
+    -webkit-filter: grayscale(30%);
+	filter: grayscale(30%);
+    
+    -webkit-transition: filter 100ms ease-out 1s;
+    -moz-transition: filter 100ms ease-out 1s;
+    -o-transition: filter 100ms ease-out 1s;
+    transition: filter 100ms ease-out 1s;
+    
+    -webkit-transition: -webkit-filter 100ms ease-out 1s;
+    -moz-transition: -webkit-filter 100ms ease-out 1s;
+    -o-transition: -webkit-filter 100ms ease-out 1s;
+    transition: -webkit-filter 100ms ease-out 1s;
+}
+
+/* Height
+ ========================================================================== */
+.height-50 {
+    height: 50px;
+}
+
+.height-70 {
+    height: 70px;
 }
