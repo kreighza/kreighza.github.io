@@ -99,6 +99,10 @@
     background-image: url($img-work);
 }
 
+.bg-light-grey {
+    background-color: $light-grey;
+}
+
 /* Overlays 
  ========================================================================== */
 .blue-overlay {
@@ -123,4 +127,20 @@ ul.inline-list {
 
 ul.list-m-20 li {
     margin: 20px;
+}
+
+/* Padding
+ ========================================================================== */
+.p-t-100 {
+    padding-top: 100px;
+}
+
+.p-b-100 {
+    padding-bottom: 100px;
+}
+
+/* Line Height
+ ========================================================================== */
+.l-h-50 {
+    line-height: 50px;
 }
