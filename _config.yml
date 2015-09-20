@@ -11,7 +11,7 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://http://kreighza.github.io" # the base hostname & protocol for your site
 
-github: https://github.com/breisamoralde
+github: https://github.com/breisamoralde?tab=activity
 gitlab: https://gitlab.com/u/zeitgeist
 linkedin: https://ph.linkedin.com/pub/breisa-moralde/35/7b1/2a1
 
