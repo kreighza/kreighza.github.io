@@ -63,7 +63,7 @@ active: index
                <!-- begin timeline-time -->
                <div class="timeline-time">
                   <span class="date">{{ exp.durationStart }}</span>
-                  <span class="time">{{ exp.durationEnd }}</span>
+                  <span class="time">to {{ exp.durationEnd }} </span>
                </div>
                <!-- end timeline-time -->
                <!-- begin timeline-icon -->
@@ -77,8 +77,14 @@ active: index
                      <div class="timeline-header-company-logo"><img src="{{ exp.companyLogo }}"  width="100px"/></div>
                      <div>{{ exp.jobTitle }}</div>
                      <div><a href="{{ exp.companyUrl }}"> {{ exp.company }}</a> ( {{ exp.location }} ) </div>
-                     <div>{{ exp.durationStart }} – {{ exp.durationEnd }} </div>
-                  </div>
+                      {% if exp.durationEnd == 'Present'  %} 
+                        {% assign endDate = site.time %}                        
+                      {% else %}
+                        {% assign endDate = exp.durationEnd %}
+                      {% endif %}
+                      
+                      <div>{{ exp.durationStart }} – {{ exp.durationEnd }} ( {{ exp.durationStart | timeago : endDate }} ) </div>
+                   </div>
                   <div class="timeline-content">
                      <p>
                         {{ exp.jobDescription }}
