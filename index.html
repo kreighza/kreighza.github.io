@@ -3,8 +3,22 @@ layout: default
 active: index
 ---
 
+<div style="
+    width: 200px;
+    position: fixed;
+    right: 0;
+    z-index: 1000;
+    bottom: 0;
+    margin-bottom: 100px;"
+>
+    <ul class="uk-dotnav uk-flex-column">
+        <li><a href="/index.html#profile" data-uk-smooth-scroll data-uk-tooltip="{pos:'left'}" title="Profile" >profile</a></li>
+        <li><a href="/index.html#workExperience" data-uk-smooth-scroll data-uk-tooltip="{pos:'left'}" title="Experience">work experience</a></li>
+        <li><a href="/index.html#skills" data-uk-smooth-scroll data-uk-tooltip="{pos:'left'}" title="Skill set">skillset</a></li>
+    </ul>
+</div>
 
-<div class="kr-section uk-height-1-1">
+<div class="kr-section uk-height-1-1" id="profile">
    <div class="uk-container uk-container-center uk-text-center uk-height-1-1 font-family-light">
        <div class="uk-thumbnail uk-overlay-hover uk-border-circle">
                         <figure class="uk-overlay">
@@ -44,11 +58,12 @@ active: index
    <div class="uk-container uk-container-center uk-text-center uk-height-1-1 font-family-light">
       <div class="container p-t-100 p-b-100">
          <ul class="timeline">
+            {% for exp in site.workExperience %}
             <li>
                <!-- begin timeline-time -->
                <div class="timeline-time">
-                  <span class="date">January 2013</span>
-                  <span class="time">to Present</span>
+                  <span class="date">{{ exp.durationStart }}</span>
+                  <span class="time">{{ exp.durationEnd }}</span>
                </div>
                <!-- end timeline-time -->
                <!-- begin timeline-icon -->
@@ -59,53 +74,20 @@ active: index
                <!-- begin timeline-body -->
                <div class="timeline-body">
                   <div class="timeline-header">
-                     <div class="timeline-header-company-logo"><img src="images/synacy.png"  width="100px"/></div>
-                     <div>Software Developer</div>
-                     <div><a href="http://synacy.com/">Synacy</a> (Cebu, Philippines) </div>
-                     <div>January 2013 – Present </div>
+                     <div class="timeline-header-company-logo"><img src="{{ exp.companyLogo }}"  width="100px"/></div>
+                     <div>{{ exp.jobTitle }}</div>
+                     <div><a href="{{ exp.companyUrl }}"> {{ exp.company }}</a> ( {{ exp.location }} ) </div>
+                     <div>{{ exp.durationStart }} – {{ exp.durationEnd }} </div>
                   </div>
                   <div class="timeline-content">
                      <p>
-                        Synacy is a technology company. 
-                        Interests within the wider group are diverse, ranging from mineral exploration headquartered in Canada to information technology and telecommunications businesses in Singapore and Australia. The senior management is Australian and Cebu based.
-                        Our software development projects provide interesting technical challenges including scaling a high volume transactional system, optimising and building APIs for our partners and developing exciting front end products. We also have a few new ideas that will keep things interesting. We employ agile development methods utilising Java, Grails, Spring, PostgreSQL and LAMP.
+                        {{ exp.jobDescription }}
                      </p>
                   </div>
                </div>
                <!-- end timeline-body -->
             </li>
-            <li>
-               <!-- begin timeline-time -->
-               <div class="timeline-time">
-                  <span class="date">December 2011</span>
-                  <span class="time">to Present</span>
-               </div>
-               <!-- end timeline-time -->
-               <!-- begin timeline-icon -->
-               <div class="timeline-icon">
-                  <a href="javascript:;"><i class="uk-icon-briefcase uk-icon-small l-h-50"></i></a>
-               </div>
-               <!-- end timeline-icon -->
-               <!-- begin timeline-body -->
-               <div class="timeline-body">
-                  <div class="timeline-header">
-                     <div class="timeline-header-company-logo"><img src="images/onb.jpg" width="100px"/></div>
-                     <div>Software Developer</div>
-                     <div><a href="http://orangeandbronze.com/">Orange and Bronze</a> (Makati, Philippines)</div>
-                     <div>December 2011 – Present</div>
-                  </div>
-                  <div class="timeline-content">
-                     <p class="lead">
-                        <i class="fa fa-quote-left fa-fw pull-left"></i>
-                        The role of the software developer is the creation of software. The tasks involved include but are not limited to the following: programming, installation and configuration of software, design of software
-                        research, testing, collaboration with teammates and other stakeholders, and documentation. The software developer may also assume the role of consultant. The role largely involves assisting or advising clients in the field of software development. Other roles and tasks may be assigned as needed.
-                        <i class="fa fa-quote-right fa-fw pull-right"></i>
-                     </p>
-                  </div>
-                  
-               </div>
-               <!-- end timeline-body -->
-            </li>
+            {% endfor %}
             <li>
                <!-- begin timeline-icon -->
                <div class="timeline-icon">
@@ -113,11 +95,11 @@ active: index
                </div>
                <!-- end timeline-icon -->
                <div class="timeline-time">
-                  <span class="date-only">November 2011</span>
+                  <span class="date-only">{{ site.graduatedDate }}</span>
                </div>
                <!-- begin timeline-body -->
                <div class="timeline-body">
-                   Graduated from college
+                   {{ site.graduatedText }}
                </div>
                <!-- begin timeline-body -->
             </li>
@@ -131,7 +113,7 @@ active: index
    <div class="">
       <img class="uk-invisible" width="600" height="400" alt="">
       <div class="uk-position-cover uk-flex uk-flex-center uk-flex-middle">
-         <div class="uk-heading-large uppercase m-t-60 font-color-white font-weight-300">SKILLS</div>
+         <div class="uk-heading-large uppercase m-t-60 font-color-white font-weight-300">SKILL SET</div>
       </div>
    </div>
 </div>
@@ -140,7 +122,9 @@ active: index
    <div class="uk-container uk-container-center uk-text-center uk-height-1-1 font-family-light">
       <div class="container p-t-100 p-b-100">
           
-           <p class="font-family-light font-size-regular"> I have used a variety of frameworks in a lot of my projects. </p>
+           <p class="font-family-light font-size-regular"> {{ site.skillSet_info }} </p>
+          
+           
           
             <div class="uk-grid m-t-100">
                 <div class="uk-width-medium-1-2">
@@ -183,10 +167,6 @@ active: index
                     </div>
                 </div>
             </div>
-          
-            
-          
-            
       </div>
    </div>
 </div>

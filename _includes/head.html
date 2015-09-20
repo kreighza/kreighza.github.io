@@ -7,10 +7,14 @@
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
     <link rel="stylesheet" href="{{ "/assets/uikit/css/uikit.min.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/assets/uikit/css/components/dotnav.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/assets/uikit/css/components/tooltip.css" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    
     <script src="/assets/jquery/dist/jquery.js"></script>
     <script src="/assets/uikit/js/uikit.min.js"></script>
     <script src="/assets/uikit/js/components/sticky.js"></script>
+    <script src="/assets/uikit/js/components/tooltip.js"></script>
     <script src="/assets/uikit/js/core/core.min.js"></script>
     <script src="/assets/uikit/js/core/nav.min.js"></script>
     <script src="/assets/uikit/js/core/grid.min.js"></script>

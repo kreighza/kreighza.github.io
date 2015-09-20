@@ -7,26 +7,15 @@
             {% for link in site.navigation %}
                 {% assign current = nil %}
                     {% if page.url == link.url or page.layout == link.layout %}
-                        {% assign current = 'current' %}
+                        {% assign current = 'uk-active' %}
                     {% endif %}
 
                 <li class="{% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}">
                     <a class="{{ current }}" href="{{ link.url }}">{{ link.text }}</a>
                 </li>
             {% endfor %}
-<!--
-        <li class="uk-active">
-            <a href="/index.html">Home</a>
-        </li>
-        <li><a href="/blog.html">Blog</a></li>
-        <li><a href="/blog.html">Contact</a></li>
--->
         </ul>
-
         <a href="#offcanvas-1" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas=""></a>
-        <div class="uk-navbar-content uk-navbar-center ">
-<!--            <a href="/index.html" class="font-family-regular font-color-blue">KR</a>-->
-        </div>
     </div>
     
 
