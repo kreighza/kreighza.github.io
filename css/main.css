@@ -38,10 +38,11 @@
 /* Font Colors
  ========================================================================== */
 .font-color-blue {
-  color: #0AC5E6; }
+  color: #00A8E6; }
 
-.font-color-white {
-  color: #FFFFFF; }
+.font-color-white,
+.font-color-white a {
+  color: #FFFFFF !important; }
 
 /* Font Effects
  ========================================================================== */
@@ -56,6 +57,12 @@
 .m-t-100 {
   margin-top: 100px !important; }
 
+.m-t-150 {
+  margin-top: 150px !important; }
+
+.m-b-100 {
+  margin-bottom: 100px !important; }
+
 .m-0 {
   margin: 0; }
 
@@ -65,8 +72,8 @@
   background: #383D41; }
 
 .bg-blue {
-  background: #0AC5E6;
-  background-color: #0AC5E6; }
+  background: #00A8E6;
+  background-color: #00A8E6; }
 
 .bg-stars {
   background: url("../images/bg-stars.jpg");
@@ -80,6 +87,10 @@
 .bg-skill {
   height: 40%;
   background-image: url("../images/skill.jpg"); }
+
+.bg-projects {
+  height: 40%;
+  background-image: url("../images/projects.jpg"); }
 
 .bg-light-grey {
   background-color: #D9E0E7; }
@@ -114,6 +125,12 @@ ul.list-m-20 li {
 .p-b-100 {
   padding-bottom: 100px; }
 
+.p-t-50 {
+  padding-top: 50px !important; }
+
+.p-b-50 {
+  padding-bottom: 50px !important; }
+
 /* Line Height
  ========================================================================== */
 .l-h-50 {
@@ -145,6 +162,9 @@ ul.list-m-20 li {
 .height-70 {
   height: 70px; }
 
+.height-400 {
+  height: 400px !important; }
+
 body, h1, h2, h3, h4, h5, h6,
 .uk-navbar-nav > li > a {
   font-family: "Source Sans Pro", serif; }
@@ -153,12 +173,12 @@ a {
   color: #383D41; }
 
 a:hover {
-  color: #0AC5E6; }
+  color: #00A8E6; }
 
 .uk-navbar-nav > li.uk-active > a,
 .uk-navbar-nav > li > a:hover {
   background-color: transparent;
-  border-bottom: 3px solid #0AC5E6; }
+  border-bottom: 3px solid #00A8E6; }
 
 /* Base
  ========================================================================== */
@@ -170,7 +190,7 @@ html {
 /* Layout
  ========================================================================== */
 .kr-background {
-  background: #0AC5E6; }
+  background: #00A8E6; }
 
 /*
  * Blocks
@@ -278,7 +298,7 @@ a:hover {
 
 .timeline .timeline-icon a:focus,
 .timeline .timeline-icon a:hover {
-  background: #0AC5E6; }
+  background: #00A8E6; }
 
 .timeline .timeline-body {
   margin-left: 25%;

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html class="uk-height-1-1">
+<!--<html class="uk-height-1-1">-->
+<html class="uk-height-viewport">
 
   <head>
     <meta charset="utf-8">
@@ -10,18 +11,26 @@
     <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 ">
 
-    <link rel="stylesheet" href="/assets/uikit/css/uikit.min.css">
     <link rel="stylesheet" href="/assets/uikit/css/components/dotnav.css">
     <link rel="stylesheet" href="/assets/uikit/css/components/tooltip.css">
+    <link rel="stylesheet" href="/assets/uikit/css/components/slideshow.css">
+    <link rel="stylesheet" href="/assets/uikit/css/components/slidenav.css">
+    <link rel="stylesheet" href="/assets/uikit/css/uikit.css">
     <link rel="stylesheet" href="/css/main.css">
     
     <script src="/assets/jquery/dist/jquery.js"></script>
     <script src="/assets/uikit/js/uikit.min.js"></script>
     <script src="/assets/uikit/js/components/sticky.js"></script>
     <script src="/assets/uikit/js/components/tooltip.js"></script>
+    <script src="/assets/uikit/js/components/lightbox.js"></script>
+    <script src="/assets/uikit/js/components/slideshow.js"></script>
+    <script src="/assets/uikit/js/components/slideshow-fx.js"></script>
     <script src="/assets/uikit/js/core/core.min.js"></script>
+    <script src="/assets/uikit/js/core/utility.js"></script>
     <script src="/assets/uikit/js/core/nav.min.js"></script>
     <script src="/assets/uikit/js/core/grid.min.js"></script>
+    <script src="/assets/uikit/js/core/modal.js"></script>
+    <script src="/assets/uikit/js/core/alert.js"></script>
     <script src="/assets/uikit/js/core/smooth-scroll.min.js"></script>
     
     <link rel="canonical" href="http://http://kreighza.github.io/">
@@ -29,7 +38,7 @@
 </head>
 
     
-  <body class="uk-height-1-1" id="home">
+  <body class="uk-height-viewport" id="home">
 
     <nav class="uk-sticky-placeholder uk-navbar font-family-regular" style="z-index: 1000;" data-uk-sticky="{top:-400, animation: 'uk-animation-slide-top'}">
 
@@ -69,23 +78,24 @@
 </nav>
 
     <div style="
-    width: 200px;
+    width: 100px;
     position: fixed;
     right: 0;
     z-index: 1000;
     bottom: 0;
-    margin-bottom: 100px;"
+    margin-bottom: 300px;"
 >
     <ul class="uk-dotnav uk-flex-column" data-uk-scrollspy-nav="{closest:'li', smoothscroll:true}">
         <li><a href="#profile" >profile</a></li>
         <li><a href="#workExperience">work experience</a></li>
         <li><a href="#skills">skillset</a></li>
+        <li><a href="#projects">projects</a></li>
     </ul>
 </div>
 
-<div id="profile" class="uk-height-1-1">
-    <div class="kr-section" data-uk-scrollspy="{cls:'uk-animation-fade', repeat: true}">
-       <div class="uk-container uk-container-center uk-text-center uk-height-1-1 font-family-light">
+<div id="profile" class="uk-height-viewport">
+    <div class="kr-section">
+       <div class="uk-container uk-container-center uk-text-center font-family-light">
            <div class="uk-thumbnail uk-overlay-hover uk-border-circle">
                             <figure class="uk-overlay">
                                 <img class="uk-border-circle" width="300" height="300" src="/images/profile-photo.jpg" alt="">
@@ -98,13 +108,13 @@
           <div class="uppercase font-size-regular"> Philippines </div>
           <ul class="inline-list list-m-20 m-t-100" style="padding-left: 0px;">
              <li>
-                <a href="https://github.com/breisamoralde?tab=activity" target="_blank"> <i class="uk-icon-github-square uk-icon-medium"></i></a>
+                <a href="https://github.com/breisamoralde?tab=activity" target="_blank"> <i class="uk-icon-github-alt uk-icon-large"></i></a>
              </li>
              <li>
-                <a href="https://gitlab.com/u/zeitgeist" target="_blank"> <i class="uk-icon-git-square uk-icon-medium"></i></a>
+                <a href="https://gitlab.com/u/zeitgeist" target="_blank"> <i class="uk-icon-git-square uk-icon-large"></i></a>
              </li>
              <li>
-                <a href="https://ph.linkedin.com/pub/breisa-moralde/35/7b1/2a1" target="_blank"><i class="uk-icon-linkedin-square uk-icon-medium"></i></a>
+                <a href="https://ph.linkedin.com/pub/breisa-moralde/35/7b1/2a1" target="_blank"><i class="uk-icon-linkedin uk-icon-large"></i></a>
              </li>
           </ul>
        </div>
@@ -113,17 +123,19 @@
 </div>
 
 <div id="workExperience" class="">
-    <div class="uk-cover-background uk-position-relative bg-work font-family-light" data-uk-scrollspy="{cls:'uk-animation-fade', repeat: true}" style="height: 400px">
-       <div class="blue-overlay"></div>
+    <div class="uk-cover-background uk-position-relative bg-work font-family-light height-400">
+       
        <div class="">
           <img class="uk-invisible" width="600" height="400" alt="">
-          <div class="uk-position-cover uk-flex uk-flex-center uk-flex-middle">
-             <div class="uk-heading-large uppercase m-t-60 font-color-white font-weight-400">EXPERIENCE</div>
+          <div class="uk-position-cover" style="text-align: center; z-index: 100;">
+             <div class="uk-heading-large uppercase m-t-150 font-color-white font-weight-400">EXPERIENCE</div>
+             <div class="font-weight-400 font-size-regular font-color-white">Kreisa has been a Software Developer for 3 years and 9 months. </div>
           </div>
        </div>
+        <div class="blue-overlay"></div>
     </div>
 
-    <div class="bg-light-grey" data-uk-scrollspy="{cls:'uk-animation-fade', repeat: true}">
+    <div class="bg-light-grey">
        <div class="uk-container uk-container-center uk-text-center font-family-light" >
           <div class="container p-t-100 p-b-100">
              <ul class="timeline">
@@ -217,21 +229,20 @@
 
 
 <div id="skills" class="">
-    <div class="uk-cover-background uk-position-relative bg-skill font-family-light" data-uk-scrollspy="{cls:'uk-animation-fade', repeat: true}" style="height: 400px">
-       <div class="blue-overlay"></div>
-       <div class="">
+    <div class="uk-cover-background uk-position-relative bg-skill font-family-light height-400">
+        <div class="blue-overlay"></div>   
+        <div class="">
           <img class="uk-invisible" width="600" height="400" alt="">
-          <div class="uk-position-cover uk-flex uk-flex-center uk-flex-middle">
-             <div class="uk-heading-large uppercase m-t-60 font-color-white font-weight-400">SKILL SET</div>
+          <div class="uk-position-cover" style="text-align: center; z-index: 100;">
+             <div class="uk-heading-large uppercase m-t-150 font-color-white font-weight-400">SKILL SET</div>
+             <div class="font-weight-400 font-size-regular font-color-white">Some of the frameworks Kreisa has used in her projects.</div>
           </div>
        </div>
     </div>
 
-    <div class="" data-uk-scrollspy="{cls:'uk-animation-fade', repeat: true}">
+    <div class="">
        <div class="uk-container uk-container-center uk-text-center font-family-light" >
           <div class="container p-t-100 p-b-100">
-
-               <p class="font-family-light font-size-regular"> I have used a variety of frameworks in a lot of my projects. </p>
 
                 <div class="uk-grid m-t-100">
                     <div class="uk-width-medium-1-2">
@@ -279,12 +290,98 @@
     </div>
 </div>
 
+<div id="projects" style="margin-bottom: 100px;">
+    <div class="uk-cover-background uk-position-relative bg-projects font-family-light height-400" >
+        <div class="blue-overlay"></div>   
+        <div class="">
+          <img class="uk-invisible" width="600" height="400" alt="">
+          <div class="uk-position-cover" style="text-align: center; z-index: 100;">
+             <div class="uk-heading-large uppercase m-t-150 font-color-white font-weight-400">PROJECTS</div>
+             <div class="font-weight-400 font-size-regular font-color-white"> Stuff Kreisa has been up to. </div>
+          </div>
+       </div>
+    </div>
+
+    <div class="kr-section"  >
+       <div class="uk-container uk-container-center uk-text-left font-family-light">
+           
+          <div class="uk-grid" data-uk-grid-margin="">
+
+                <div class="uk-width-medium-1-2">
+                    <img width="660" height="400" src="images/uikitcomplete.png" alt="">
+                </div>
+
+                <div class="uk-width-medium-1-2">
+                    <h1>Heading</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <h2>Subheading</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <a class="uk-button uk-button-primary" href="https://gitlab.com/zeitgeist/uikit-complete">Know more...</a>
+                </div>
+              
+                
+
+            </div>
+           <hr class="uk-grid-divider">
+           
+           <div class="uk-grid" data-uk-grid-margin="">
+
+                <div class="uk-width-medium-1-2">
+                    <img width="660" height="400" src="images/bg-stars.jpg" alt="">
+                </div>
+
+                <div class="uk-width-medium-1-2">
+                    <h1>Heading</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <h2>Subheading</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <a class="uk-button uk-button-primary" href="https://gitlab.com/zeitgeist/uikit-complete">Know more...</a>
+                </div>
+              
+                
+
+            </div>
+           <hr class="uk-grid-divider">
+           
+           <div class="uk-grid" data-uk-grid-margin="">
+
+                <div class="uk-width-medium-1-2">
+                    <img width="660" height="400" src="images/uikitcomplete.png" alt="">
+                </div>
+
+                <div class="uk-width-medium-1-2">
+                    <h1>Heading</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <h2>Subheading</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <a class="uk-button uk-button-primary" href="https://gitlab.com/zeitgeist/uikit-complete">Know more...</a>
+                </div>
+
+            </div>
+          
+       </div>
+    </div>
+</div>
     
     <!--
 <span class="font-regular"> Kreisa Moralde </span>
 wiiGenocide@gmail.com
 
 -->
+
+<div class="bg-black font-color-white">
+    <div class="uk-container uk-container-center uk-text-center p-t-50 p-b-50">
+
+        <ul class="uk-subnav uk-subnav-line uk-flex-center">
+            <li><a href="https://github.com/kreighza/kreighza.github.io">GitHub</a></li>
+        </ul>
+
+        <div class="uk-panel">
+            <p>Made by <a href="#"> Kreisa Moralde </a></p>
+        </div>
+
+    </div>
+</div>
     
 
 
