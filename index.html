@@ -4,23 +4,24 @@ active: index
 ---
 
 <div style="
-    width: 200px;
+    width: 100px;
     position: fixed;
     right: 0;
     z-index: 1000;
     bottom: 0;
-    margin-bottom: 100px;"
+    margin-bottom: 300px;"
 >
     <ul class="uk-dotnav uk-flex-column" data-uk-scrollspy-nav="{closest:'li', smoothscroll:true}">
         <li><a href="#profile" >profile</a></li>
         <li><a href="#workExperience">work experience</a></li>
         <li><a href="#skills">skillset</a></li>
+        <li><a href="#projects">projects</a></li>
     </ul>
 </div>
 
-<div id="profile" class="uk-height-1-1">
-    <div class="kr-section" data-uk-scrollspy="{cls:'uk-animation-fade', repeat: true}">
-       <div class="uk-container uk-container-center uk-text-center uk-height-1-1 font-family-light">
+<div id="profile" class="uk-height-viewport">
+    <div class="kr-section">
+       <div class="uk-container uk-container-center uk-text-center font-family-light">
            <div class="uk-thumbnail uk-overlay-hover uk-border-circle">
                             <figure class="uk-overlay">
                                 <img class="uk-border-circle" width="300" height="300" src="/images/profile-photo.jpg" alt="">
@@ -33,13 +34,13 @@ active: index
           <div class="uppercase font-size-regular"> {{ site.current_location }} </div>
           <ul class="inline-list list-m-20 m-t-100" style="padding-left: 0px;">
              <li>
-                <a href="{{ site.github }}" target="_blank"> <i class="uk-icon-github-square uk-icon-medium"></i></a>
+                <a href="{{ site.github }}" target="_blank"> <i class="uk-icon-github-alt uk-icon-large"></i></a>
              </li>
              <li>
-                <a href="{{ site.gitlab }}" target="_blank"> <i class="uk-icon-git-square uk-icon-medium"></i></a>
+                <a href="{{ site.gitlab }}" target="_blank"> <i class="uk-icon-git-square uk-icon-large"></i></a>
              </li>
              <li>
-                <a href="{{ site.linkedin }}" target="_blank"><i class="uk-icon-linkedin-square uk-icon-medium"></i></a>
+                <a href="{{ site.linkedin }}" target="_blank"><i class="uk-icon-linkedin uk-icon-large"></i></a>
              </li>
           </ul>
        </div>
@@ -48,17 +49,19 @@ active: index
 </div>
 
 <div id="workExperience" class="">
-    <div class="uk-cover-background uk-position-relative bg-work font-family-light" data-uk-scrollspy="{cls:'uk-animation-fade', repeat: true}" style="height: 400px">
-       <div class="blue-overlay"></div>
+    <div class="uk-cover-background uk-position-relative bg-work font-family-light height-400">
+       
        <div class="">
           <img class="uk-invisible" width="600" height="400" alt="">
-          <div class="uk-position-cover uk-flex uk-flex-center uk-flex-middle">
-             <div class="uk-heading-large uppercase m-t-60 font-color-white font-weight-400">EXPERIENCE</div>
+          <div class="uk-position-cover" style="text-align: center; z-index: 100;">
+             <div class="uk-heading-large uppercase m-t-150 font-color-white font-weight-400">EXPERIENCE</div>
+             <div class="font-weight-400 font-size-regular font-color-white">Kreisa has been a Software Developer for {{ site.jobStart | timeago }}. </div>
           </div>
        </div>
+        <div class="blue-overlay"></div>
     </div>
 
-    <div class="bg-light-grey" data-uk-scrollspy="{cls:'uk-animation-fade', repeat: true}">
+    <div class="bg-light-grey">
        <div class="uk-container uk-container-center uk-text-center font-family-light" >
           <div class="container p-t-100 p-b-100">
              <ul class="timeline">
@@ -121,21 +124,20 @@ active: index
 
 
 <div id="skills" class="">
-    <div class="uk-cover-background uk-position-relative bg-skill font-family-light" data-uk-scrollspy="{cls:'uk-animation-fade', repeat: true}" style="height: 400px">
-       <div class="blue-overlay"></div>
-       <div class="">
+    <div class="uk-cover-background uk-position-relative bg-skill font-family-light height-400">
+        <div class="blue-overlay"></div>   
+        <div class="">
           <img class="uk-invisible" width="600" height="400" alt="">
-          <div class="uk-position-cover uk-flex uk-flex-center uk-flex-middle">
-             <div class="uk-heading-large uppercase m-t-60 font-color-white font-weight-400">SKILL SET</div>
+          <div class="uk-position-cover" style="text-align: center; z-index: 100;">
+             <div class="uk-heading-large uppercase m-t-150 font-color-white font-weight-400">SKILL SET</div>
+             <div class="font-weight-400 font-size-regular font-color-white">{{ site.skillSet_info }}</div>
           </div>
        </div>
     </div>
 
-    <div class="" data-uk-scrollspy="{cls:'uk-animation-fade', repeat: true}">
+    <div class="">
        <div class="uk-container uk-container-center uk-text-center font-family-light" >
           <div class="container p-t-100 p-b-100">
-
-               <p class="font-family-light font-size-regular"> {{ site.skillSet_info }} </p>
 
                 <div class="uk-grid m-t-100">
                     <div class="uk-width-medium-1-2">
@@ -179,6 +181,79 @@ active: index
                     </div>
                 </div>
           </div>
+       </div>
+    </div>
+</div>
+
+<div id="projects" style="margin-bottom: 100px;">
+    <div class="uk-cover-background uk-position-relative bg-projects font-family-light height-400" >
+        <div class="blue-overlay"></div>   
+        <div class="">
+          <img class="uk-invisible" width="600" height="400" alt="">
+          <div class="uk-position-cover" style="text-align: center; z-index: 100;">
+             <div class="uk-heading-large uppercase m-t-150 font-color-white font-weight-400">PROJECTS</div>
+             <div class="font-weight-400 font-size-regular font-color-white"> Stuff Kreisa has been up to. </div>
+          </div>
+       </div>
+    </div>
+
+    <div class="kr-section"  >
+       <div class="uk-container uk-container-center uk-text-left font-family-light">
+           
+          <div class="uk-grid" data-uk-grid-margin="">
+
+                <div class="uk-width-medium-1-2">
+                    <img width="660" height="400" src="images/uikitcomplete.png" alt="">
+                </div>
+
+                <div class="uk-width-medium-1-2">
+                    <h1>Heading</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <h2>Subheading</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <a class="uk-button uk-button-primary" href="https://gitlab.com/zeitgeist/uikit-complete">Know more...</a>
+                </div>
+              
+                
+
+            </div>
+           <hr class="uk-grid-divider">
+           
+           <div class="uk-grid" data-uk-grid-margin="">
+
+                <div class="uk-width-medium-1-2">
+                    <img width="660" height="400" src="images/bg-stars.jpg" alt="">
+                </div>
+
+                <div class="uk-width-medium-1-2">
+                    <h1>Heading</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <h2>Subheading</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <a class="uk-button uk-button-primary" href="https://gitlab.com/zeitgeist/uikit-complete">Know more...</a>
+                </div>
+              
+                
+
+            </div>
+           <hr class="uk-grid-divider">
+           
+           <div class="uk-grid" data-uk-grid-margin="">
+
+                <div class="uk-width-medium-1-2">
+                    <img width="660" height="400" src="images/uikitcomplete.png" alt="">
+                </div>
+
+                <div class="uk-width-medium-1-2">
+                    <h1>Heading</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <h2>Subheading</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <a class="uk-button uk-button-primary" href="https://gitlab.com/zeitgeist/uikit-complete">Know more...</a>
+                </div>
+
+            </div>
+          
        </div>
     </div>
 </div>

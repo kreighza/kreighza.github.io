@@ -23,7 +23,9 @@ navigation:
 - text: contact
   url: /contact.html
   
-skillSet_info: I have used a variety of frameworks in a lot of my projects.
+skillSet_info: Some of the frameworks Kreisa has used in her projects.
+
+jobStart: December 1, 2011
 
 # List work experience here.
 # First in line would be the latest.
@@ -44,10 +46,13 @@ workExperience:
   companyUrl: http://orangeandbronze.com/
   companyLogo: images/onb.jpg
   jobDescription: The role of the software developer is the creation of software. The tasks involved include but are not limited to the following programming, installation and configuration of software, design of software research, testing, collaboration with teammates and other stakeholders, and documentation. The software developer may also assume the role of consultant. The role largely involves assisting or advising clients in the field of software development. Other roles and tasks may be assigned as needed.
-  
 
 graduatedText: Graduated from college
 graduatedDate: November 2011
+
+projects:
+- title: 'Uikit Complete for Meteor'
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
 jekyll_timeago:
   today: 'today'
