@@ -76,192 +76,209 @@
     bottom: 0;
     margin-bottom: 100px;"
 >
-    <ul class="uk-dotnav uk-flex-column">
-        <li><a href="/index.html#profile" data-uk-smooth-scroll data-uk-tooltip="{pos:'left'}" title="Profile" >profile</a></li>
-        <li><a href="/index.html#workExperience" data-uk-smooth-scroll data-uk-tooltip="{pos:'left'}" title="Experience">work experience</a></li>
-        <li><a href="/index.html#skills" data-uk-smooth-scroll data-uk-tooltip="{pos:'left'}" title="Skill set">skillset</a></li>
+    <ul class="uk-dotnav uk-flex-column" data-uk-scrollspy-nav="{closest:'li', smoothscroll:true}">
+        <li><a href="#profile" >profile</a></li>
+        <li><a href="#workExperience">work experience</a></li>
+        <li><a href="#skills">skillset</a></li>
     </ul>
 </div>
 
-<div class="kr-section uk-height-1-1" id="profile">
-   <div class="uk-container uk-container-center uk-text-center uk-height-1-1 font-family-light">
-       <div class="uk-thumbnail uk-overlay-hover uk-border-circle">
-                        <figure class="uk-overlay">
-                            <img class="uk-border-circle" width="300" height="300" src="/images/profile-photo.jpg" alt="">
-                            <figcaption class="uk-overlay-panel uk-overlay-background uk-flex uk-flex-center uk-flex-middle uk-text-center uk-border-circle"></figcaption>
-                        </figure>
-                    </div>
-       
-      <div class="uk-heading-large uppercase m-t-60 font-color-blue" style="font-weight: 300;">Kreisa Moralde</div>
-      <div class="uppercase font-size-regular"> Software Developer & Traveler </div>
-      <div class="uppercase font-size-regular"> Philippines </div>
-      <ul class="inline-list list-m-20 m-t-100" style="padding-left: 0px;">
-         <li>
-            <a href="https://github.com/breisamoralde" target="_blank"> <i class="uk-icon-github-square uk-icon-medium"></i></a>
-         </li>
-         <li>
-            <a href="https://gitlab.com/u/zeitgeist" target="_blank"> <i class="uk-icon-git-square uk-icon-medium"></i></a>
-         </li>
-         <li>
-            <a href="https://ph.linkedin.com/pub/breisa-moralde/35/7b1/2a1" target="_blank"><i class="uk-icon-linkedin-square uk-icon-medium"></i></a>
-         </li>
-      </ul>
-   </div>
+<div id="profile" class="uk-height-1-1">
+    <div class="kr-section" data-uk-scrollspy="{cls:'uk-animation-fade', repeat: true}">
+       <div class="uk-container uk-container-center uk-text-center uk-height-1-1 font-family-light">
+           <div class="uk-thumbnail uk-overlay-hover uk-border-circle">
+                            <figure class="uk-overlay">
+                                <img class="uk-border-circle" width="300" height="300" src="/images/profile-photo.jpg" alt="">
+                                <figcaption class="uk-overlay-panel uk-overlay-background uk-flex uk-flex-center uk-flex-middle uk-text-center uk-border-circle"></figcaption>
+                            </figure>
+                        </div>
+
+          <div class="uk-heading-large uppercase m-t-60 font-color-blue font-weight-400">Kreisa Moralde</div>
+          <div class="uppercase font-size-regular"> Software Developer & Traveler </div>
+          <div class="uppercase font-size-regular"> Philippines </div>
+          <ul class="inline-list list-m-20 m-t-100" style="padding-left: 0px;">
+             <li>
+                <a href="https://github.com/breisamoralde?tab=activity" target="_blank"> <i class="uk-icon-github-square uk-icon-medium"></i></a>
+             </li>
+             <li>
+                <a href="https://gitlab.com/u/zeitgeist" target="_blank"> <i class="uk-icon-git-square uk-icon-medium"></i></a>
+             </li>
+             <li>
+                <a href="https://ph.linkedin.com/pub/breisa-moralde/35/7b1/2a1" target="_blank"><i class="uk-icon-linkedin-square uk-icon-medium"></i></a>
+             </li>
+          </ul>
+       </div>
+    </div>
+
 </div>
 
-<div class="uk-cover-background uk-position-relative bg-work font-family-light" id="workExperience">
-   <div class="blue-overlay"></div>
-   <div class="">
-      <img class="uk-invisible" width="600" height="400" alt="">
-      <div class="uk-position-cover uk-flex uk-flex-center uk-flex-middle">
-         <div class="uk-heading-large uppercase m-t-60 font-color-white font-weight-300">EXPERIENCE</div>
-      </div>
-   </div>
+<div id="workExperience" class="">
+    <div class="uk-cover-background uk-position-relative bg-work font-family-light" data-uk-scrollspy="{cls:'uk-animation-fade', repeat: true}" style="height: 400px">
+       <div class="blue-overlay"></div>
+       <div class="">
+          <img class="uk-invisible" width="600" height="400" alt="">
+          <div class="uk-position-cover uk-flex uk-flex-center uk-flex-middle">
+             <div class="uk-heading-large uppercase m-t-60 font-color-white font-weight-400">EXPERIENCE</div>
+          </div>
+       </div>
+    </div>
+
+    <div class="bg-light-grey" data-uk-scrollspy="{cls:'uk-animation-fade', repeat: true}">
+       <div class="uk-container uk-container-center uk-text-center font-family-light" >
+          <div class="container p-t-100 p-b-100">
+             <ul class="timeline">
+                
+                <li>
+                   <!-- begin timeline-time -->
+                   <div class="timeline-time">
+                      <span class="date">January 1, 2013</span>
+                      <span class="time">to Present </span>
+                   </div>
+                   <!-- end timeline-time -->
+                   <!-- begin timeline-icon -->
+                   <div class="timeline-icon">
+                      <a href="javascript:;"><i class="uk-icon-briefcase uk-icon-small l-h-50"></i></a>
+                   </div>
+                   <!-- end timeline-icon -->
+                   <!-- begin timeline-body -->
+                   <div class="timeline-body">
+                      <div class="timeline-header">
+                         <div class="timeline-header-company-logo"><img src="images/synacy.png"  width="100px"/></div>
+                         <div>Software Developer</div>
+                         <div><a href="http://synacy.com/"> Synacy</a> ( Cebu, Philippines ) </div>
+                           
+                                                    
+                          
+
+                          <div>January 1, 2013 – Present ( 2 years and 8 months ) </div>
+                       </div>
+                      <div class="timeline-content">
+                         <p>
+                            Synacy is a technology company. Interests within the wider group are diverse, ranging from mineral exploration headquartered in Canada to information technology and telecommunications businesses in Singapore and Australia. The senior management is Australian and Cebu based.Our software development projects provide interesting technical challenges including scaling a high volume transactional system, optimising and building APIs for our partners and developing exciting front end products. We also have a few new ideas that will keep things interesting. We employ agile development methods utilising Java, Grails, Spring, PostgreSQL and LAMP.
+                         </p>
+                      </div>
+                   </div>
+                   <!-- end timeline-body -->
+                </li>
+                
+                <li>
+                   <!-- begin timeline-time -->
+                   <div class="timeline-time">
+                      <span class="date">December 1, 2011</span>
+                      <span class="time">to Present </span>
+                   </div>
+                   <!-- end timeline-time -->
+                   <!-- begin timeline-icon -->
+                   <div class="timeline-icon">
+                      <a href="javascript:;"><i class="uk-icon-briefcase uk-icon-small l-h-50"></i></a>
+                   </div>
+                   <!-- end timeline-icon -->
+                   <!-- begin timeline-body -->
+                   <div class="timeline-body">
+                      <div class="timeline-header">
+                         <div class="timeline-header-company-logo"><img src="images/onb.jpg"  width="100px"/></div>
+                         <div>Software Developer</div>
+                         <div><a href="http://orangeandbronze.com/"> Orange and Bronze</a> ( Makati, Philippines ) </div>
+                           
+                                                    
+                          
+
+                          <div>December 1, 2011 – Present ( 3 years and 9 months ) </div>
+                       </div>
+                      <div class="timeline-content">
+                         <p>
+                            The role of the software developer is the creation of software. The tasks involved include but are not limited to the following programming, installation and configuration of software, design of software research, testing, collaboration with teammates and other stakeholders, and documentation. The software developer may also assume the role of consultant. The role largely involves assisting or advising clients in the field of software development. Other roles and tasks may be assigned as needed.
+                         </p>
+                      </div>
+                   </div>
+                   <!-- end timeline-body -->
+                </li>
+                
+                <li>
+                   <!-- begin timeline-icon -->
+                   <div class="timeline-icon">
+                      <a href="javascript:;"><i class="uk-icon-graduation-cap uk-icon-small l-h-50"></i></a>
+                   </div>
+                   <!-- end timeline-icon -->
+                   <div class="timeline-time">
+                      <span class="date-only">November 2011</span>
+                   </div>
+                   <!-- begin timeline-body -->
+                   <div class="timeline-body">
+                       Graduated from college
+                   </div>
+                   <!-- begin timeline-body -->
+                </li>
+             </ul>
+          </div>
+       </div>
+    </div>
 </div>
 
-<div class="bg-light-grey">
-   <div class="uk-container uk-container-center uk-text-center uk-height-1-1 font-family-light">
-      <div class="container p-t-100 p-b-100">
-         <ul class="timeline">
-            
-            <li>
-               <!-- begin timeline-time -->
-               <div class="timeline-time">
-                  <span class="date">January 2013</span>
-                  <span class="time">Present</span>
-               </div>
-               <!-- end timeline-time -->
-               <!-- begin timeline-icon -->
-               <div class="timeline-icon">
-                  <a href="javascript:;"><i class="uk-icon-briefcase uk-icon-small l-h-50"></i></a>
-               </div>
-               <!-- end timeline-icon -->
-               <!-- begin timeline-body -->
-               <div class="timeline-body">
-                  <div class="timeline-header">
-                     <div class="timeline-header-company-logo"><img src="images/synacy.png"  width="100px"/></div>
-                     <div>Software Developer</div>
-                     <div><a href="http://synacy.com/"> Synacy</a> ( Cebu, Philippines ) </div>
-                     <div>January 2013 – Present </div>
-                  </div>
-                  <div class="timeline-content">
-                     <p>
-                        Synacy is a technology company. Interests within the wider group are diverse, ranging from mineral exploration headquartered in Canada to information technology and telecommunications businesses in Singapore and Australia. The senior management is Australian and Cebu based.Our software development projects provide interesting technical challenges including scaling a high volume transactional system, optimising and building APIs for our partners and developing exciting front end products. We also have a few new ideas that will keep things interesting. We employ agile development methods utilising Java, Grails, Spring, PostgreSQL and LAMP.
-                     </p>
-                  </div>
-               </div>
-               <!-- end timeline-body -->
-            </li>
-            
-            <li>
-               <!-- begin timeline-time -->
-               <div class="timeline-time">
-                  <span class="date">January 2011</span>
-                  <span class="time">Present</span>
-               </div>
-               <!-- end timeline-time -->
-               <!-- begin timeline-icon -->
-               <div class="timeline-icon">
-                  <a href="javascript:;"><i class="uk-icon-briefcase uk-icon-small l-h-50"></i></a>
-               </div>
-               <!-- end timeline-icon -->
-               <!-- begin timeline-body -->
-               <div class="timeline-body">
-                  <div class="timeline-header">
-                     <div class="timeline-header-company-logo"><img src="images/onb.jpg"  width="100px"/></div>
-                     <div>Software Developer</div>
-                     <div><a href="http://orangeandbronze.com/"> Orange and Bronze</a> ( Makati, Philippines ) </div>
-                     <div>January 2011 – Present </div>
-                  </div>
-                  <div class="timeline-content">
-                     <p>
-                        The role of the software developer is the creation of software. The tasks involved include but are not limited to the following programming, installation and configuration of software, design of software research, testing, collaboration with teammates and other stakeholders, and documentation. The software developer may also assume the role of consultant. The role largely involves assisting or advising clients in the field of software development. Other roles and tasks may be assigned as needed.
-                     </p>
-                  </div>
-               </div>
-               <!-- end timeline-body -->
-            </li>
-            
-            <li>
-               <!-- begin timeline-icon -->
-               <div class="timeline-icon">
-                  <a href="javascript:;"><i class="uk-icon-graduation-cap uk-icon-small l-h-50"></i></a>
-               </div>
-               <!-- end timeline-icon -->
-               <div class="timeline-time">
-                  <span class="date-only">November 2011</span>
-               </div>
-               <!-- begin timeline-body -->
-               <div class="timeline-body">
-                   Graduated from college
-               </div>
-               <!-- begin timeline-body -->
-            </li>
-         </ul>
-      </div>
-   </div>
+
+<div id="skills" class="">
+    <div class="uk-cover-background uk-position-relative bg-skill font-family-light" data-uk-scrollspy="{cls:'uk-animation-fade', repeat: true}" style="height: 400px">
+       <div class="blue-overlay"></div>
+       <div class="">
+          <img class="uk-invisible" width="600" height="400" alt="">
+          <div class="uk-position-cover uk-flex uk-flex-center uk-flex-middle">
+             <div class="uk-heading-large uppercase m-t-60 font-color-white font-weight-400">SKILL SET</div>
+          </div>
+       </div>
+    </div>
+
+    <div class="" data-uk-scrollspy="{cls:'uk-animation-fade', repeat: true}">
+       <div class="uk-container uk-container-center uk-text-center font-family-light" >
+          <div class="container p-t-100 p-b-100">
+
+               <p class="font-family-light font-size-regular"> I have used a variety of frameworks in a lot of my projects. </p>
+
+                <div class="uk-grid m-t-100">
+                    <div class="uk-width-medium-1-2">
+                        <div class="uk-panel">
+                            <a href="https://www.meteor.com/" target="_blank"><img src="images/meteor.png" class="height-50 filter-grey"/></a>
+                        </div>
+                    </div>
+                    <div class="uk-width-medium-1-2">
+                        <div class="uk-panel">
+                            <a href="https://www.firebase.com/" target="_blank"><img src="images/firebase.png" class="height-50 filter-grey"/></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-grid m-t-100">
+                    <div class="uk-width-medium-1-3">
+                        <div class="uk-panel">
+                            <a href="https://angularjs.org/" target="_blank"><img src="images/AngularJS.png" class="height-50 filter-grey"/></a>
+                        </div>
+                    </div>
+                    <div class="uk-width-medium-1-3">
+                        <div class="uk-panel">
+                            <a href="http://www.w3schools.com/html/html5_intro.asp" target="_blank"><img src="images/html5.png" class="height-70 filter-grey"/></a>
+                        </div>
+                    </div>
+                    <div class="uk-width-medium-1-3">
+                        <div class="uk-panel">
+                            <a href="http://www.grails.org" target="_blank"><img src="images/grails.jpg" class="height-70 filter-grey"/></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-grid m-t-100">
+                    <div class="uk-width-medium-1-2">
+                        <div class="uk-panel">
+                            <a href="http://jekyllrb.com/" target="_blank"><img src="images/jekyll.png" class="height-70 filter-grey"/></a>
+                        </div>
+                    </div>
+                    <div class="uk-width-medium-1-2">
+                        <div class="uk-panel">
+                            <a href="http://www.w3schools.com/css/css3_intro.asp" target="_blank"><img src="images/css3.png" class="height-70 filter-grey"/></a>
+                        </div>
+                    </div>
+                </div>
+          </div>
+       </div>
+    </div>
 </div>
 
-<div class="uk-cover-background uk-position-relative bg-skill font-family-light" id="skills">
-   <div class="blue-overlay"></div>
-   <div class="">
-      <img class="uk-invisible" width="600" height="400" alt="">
-      <div class="uk-position-cover uk-flex uk-flex-center uk-flex-middle">
-         <div class="uk-heading-large uppercase m-t-60 font-color-white font-weight-300">SKILL SET</div>
-      </div>
-   </div>
-</div>
-
-<div class="">
-   <div class="uk-container uk-container-center uk-text-center uk-height-1-1 font-family-light">
-      <div class="container p-t-100 p-b-100">
-          
-           <p class="font-family-light font-size-regular"> I have used a variety of frameworks in a lot of my projects. </p>
-          
-            <div class="uk-grid m-t-100">
-                <div class="uk-width-medium-1-2">
-                    <div class="uk-panel">
-                        <a href="https://www.meteor.com/" target="_blank"><img src="images/meteor.png" class="height-50 filter-grey"/></a>
-                    </div>
-                </div>
-                <div class="uk-width-medium-1-2">
-                    <div class="uk-panel">
-                        <a href="https://www.firebase.com/" target="_blank"><img src="images/firebase.png" class="height-50 filter-grey"/></a>
-                    </div>
-                </div>
-            </div>
-            <div class="uk-grid m-t-100">
-                <div class="uk-width-medium-1-3">
-                    <div class="uk-panel">
-                        <a href="https://angularjs.org/" target="_blank"><img src="images/AngularJS.png" class="height-50 filter-grey"/></a>
-                    </div>
-                </div>
-                <div class="uk-width-medium-1-3">
-                    <div class="uk-panel">
-                        <a href="http://www.w3schools.com/html/html5_intro.asp" target="_blank"><img src="images/html5.png" class="height-70 filter-grey"/></a>
-                    </div>
-                </div>
-                <div class="uk-width-medium-1-3">
-                    <div class="uk-panel">
-                        <a href="http://www.grails.org" target="_blank"><img src="images/grails.jpg" class="height-70 filter-grey"/></a>
-                    </div>
-                </div>
-            </div>
-            <div class="uk-grid m-t-100">
-                <div class="uk-width-medium-1-2">
-                    <div class="uk-panel">
-                        <a href="http://jekyllrb.com/" target="_blank"><img src="images/jekyll.png" class="height-70 filter-grey"/></a>
-                    </div>
-                </div>
-                <div class="uk-width-medium-1-2">
-                    <div class="uk-panel">
-                        <a href="http://www.w3schools.com/css/css3_intro.asp" target="_blank"><img src="images/css3.png" class="height-70 filter-grey"/></a>
-                    </div>
-                </div>
-            </div>
-      </div>
-   </div>
-</div>
     
     <!--
 <span class="font-regular"> Kreisa Moralde </span>
