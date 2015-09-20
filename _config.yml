@@ -26,6 +26,8 @@ navigation:
 skillSet_info: I have used a variety of frameworks in a lot of my projects.
 
 # List work experience here.
+# First in line would be the latest.
+# TODO: Compute durationEnd dynamically.
 workExperience:
 - jobTitle: Software Developer
   durationStart: January 2013
@@ -46,6 +48,7 @@ workExperience:
   
 
 graduatedText: Graduated from college
+graduatedDate: November 2011
   
 # Build settings
 markdown: kramdown
