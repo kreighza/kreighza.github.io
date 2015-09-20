@@ -11,10 +11,14 @@
 ">
 
     <link rel="stylesheet" href="/assets/uikit/css/uikit.min.css">
+    <link rel="stylesheet" href="/assets/uikit/css/components/dotnav.css">
+    <link rel="stylesheet" href="/assets/uikit/css/components/tooltip.css">
     <link rel="stylesheet" href="/css/main.css">
+    
     <script src="/assets/jquery/dist/jquery.js"></script>
     <script src="/assets/uikit/js/uikit.min.js"></script>
     <script src="/assets/uikit/js/components/sticky.js"></script>
+    <script src="/assets/uikit/js/components/tooltip.js"></script>
     <script src="/assets/uikit/js/core/core.min.js"></script>
     <script src="/assets/uikit/js/core/nav.min.js"></script>
     <script src="/assets/uikit/js/core/grid.min.js"></script>
@@ -30,27 +34,65 @@
     <nav class="uk-sticky-placeholder uk-navbar font-family-regular" style="z-index: 1000;" data-uk-sticky="{top:-400, animation: 'uk-animation-slide-top'}">
 
     <div class="uk-container uk-container-center uppercase">
+        
         <ul class="uk-navbar-nav uk-hidden-small">
-        <li class="uk-active"><a href="/index.html#home" data-uk-smooth-scroll>Home</a></li>
-        <li><a href="/index.html#workExperience" data-uk-smooth-scroll>Work Experience</a></li>
-        <li><a href="/index.html#skills" data-uk-smooth-scroll>Skills</a></li>
-        <li><a href="/blog.html">Blog</a></li>
-        <li><a href="/blog.html">Contact</a></li>
-        </ul>
+            
+            
+                
+                    
+                        
+                    
 
+                <li class="first uk-active ">
+                    <a class="uk-active" href="/index.html">home</a>
+                </li>
+            
+                
+                    
+
+                <li class="  ">
+                    <a class="" href="/blog.html">blog</a>
+                </li>
+            
+                
+                    
+
+                <li class="  last">
+                    <a class="" href="/contact.html">contact</a>
+                </li>
+            
+        </ul>
         <a href="#offcanvas-1" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas=""></a>
-        <div class="uk-navbar-content uk-navbar-center ">
-<!--            <a href="/index.html" class="font-family-regular font-color-blue">KR</a>-->
-        </div>
     </div>
     
 
 </nav>
 
-    <div class="kr-section uk-height-1-1">
+    <div style="
+    width: 200px;
+    position: fixed;
+    right: 0;
+    z-index: 1000;
+    bottom: 0;
+    margin-bottom: 100px;"
+>
+    <ul class="uk-dotnav uk-flex-column">
+        <li><a href="/index.html#profile" data-uk-smooth-scroll data-uk-tooltip="{pos:'left'}" title="Profile" >profile</a></li>
+        <li><a href="/index.html#workExperience" data-uk-smooth-scroll data-uk-tooltip="{pos:'left'}" title="Experience">work experience</a></li>
+        <li><a href="/index.html#skills" data-uk-smooth-scroll data-uk-tooltip="{pos:'left'}" title="Skill set">skillset</a></li>
+    </ul>
+</div>
+
+<div class="kr-section uk-height-1-1" id="profile">
    <div class="uk-container uk-container-center uk-text-center uk-height-1-1 font-family-light">
-      <img class="uk-border-circle" src="/images/profile-photo.jpg" width="250" height="250" title="profile-photo" alt="profile-photo">
-      <div class="uk-heading-large uppercase m-t-60 font-color-blue">Kreisa Moralde</div>
+       <div class="uk-thumbnail uk-overlay-hover uk-border-circle">
+                        <figure class="uk-overlay">
+                            <img class="uk-border-circle" width="300" height="300" src="/images/profile-photo.jpg" alt="">
+                            <figcaption class="uk-overlay-panel uk-overlay-background uk-flex uk-flex-center uk-flex-middle uk-text-center uk-border-circle"></figcaption>
+                        </figure>
+                    </div>
+       
+      <div class="uk-heading-large uppercase m-t-60 font-color-blue" style="font-weight: 300;">Kreisa Moralde</div>
       <div class="uppercase font-size-regular"> Software Developer & Traveler </div>
       <div class="uppercase font-size-regular"> Philippines </div>
       <ul class="inline-list list-m-20 m-t-100" style="padding-left: 0px;">
@@ -81,11 +123,12 @@
    <div class="uk-container uk-container-center uk-text-center uk-height-1-1 font-family-light">
       <div class="container p-t-100 p-b-100">
          <ul class="timeline">
+            
             <li>
                <!-- begin timeline-time -->
                <div class="timeline-time">
                   <span class="date">January 2013</span>
-                  <span class="time">to Present</span>
+                  <span class="time">Present</span>
                </div>
                <!-- end timeline-time -->
                <!-- begin timeline-icon -->
@@ -98,24 +141,23 @@
                   <div class="timeline-header">
                      <div class="timeline-header-company-logo"><img src="images/synacy.png"  width="100px"/></div>
                      <div>Software Developer</div>
-                     <div><a href="http://synacy.com/">Synacy</a> (Cebu, Philippines) </div>
+                     <div><a href="http://synacy.com/"> Synacy</a> ( Cebu, Philippines ) </div>
                      <div>January 2013 – Present </div>
                   </div>
                   <div class="timeline-content">
                      <p>
-                        Synacy is a technology company. 
-                        Interests within the wider group are diverse, ranging from mineral exploration headquartered in Canada to information technology and telecommunications businesses in Singapore and Australia. The senior management is Australian and Cebu based.
-                        Our software development projects provide interesting technical challenges including scaling a high volume transactional system, optimising and building APIs for our partners and developing exciting front end products. We also have a few new ideas that will keep things interesting. We employ agile development methods utilising Java, Grails, Spring, PostgreSQL and LAMP.
+                        Synacy is a technology company. Interests within the wider group are diverse, ranging from mineral exploration headquartered in Canada to information technology and telecommunications businesses in Singapore and Australia. The senior management is Australian and Cebu based.Our software development projects provide interesting technical challenges including scaling a high volume transactional system, optimising and building APIs for our partners and developing exciting front end products. We also have a few new ideas that will keep things interesting. We employ agile development methods utilising Java, Grails, Spring, PostgreSQL and LAMP.
                      </p>
                   </div>
                </div>
                <!-- end timeline-body -->
             </li>
+            
             <li>
                <!-- begin timeline-time -->
                <div class="timeline-time">
-                  <span class="date">December 2011</span>
-                  <span class="time">to Present</span>
+                  <span class="date">January 2011</span>
+                  <span class="time">Present</span>
                </div>
                <!-- end timeline-time -->
                <!-- begin timeline-icon -->
@@ -126,23 +168,20 @@
                <!-- begin timeline-body -->
                <div class="timeline-body">
                   <div class="timeline-header">
-                     <div class="timeline-header-company-logo"><img src="images/onb.jpg" width="100px"/></div>
+                     <div class="timeline-header-company-logo"><img src="images/onb.jpg"  width="100px"/></div>
                      <div>Software Developer</div>
-                     <div><a href="http://orangeandbronze.com/">Orange and Bronze</a> (Makati, Philippines)</div>
-                     <div>December 2011 – Present</div>
+                     <div><a href="http://orangeandbronze.com/"> Orange and Bronze</a> ( Makati, Philippines ) </div>
+                     <div>January 2011 – Present </div>
                   </div>
                   <div class="timeline-content">
-                     <p class="lead">
-                        <i class="fa fa-quote-left fa-fw pull-left"></i>
-                        The role of the software developer is the creation of software. The tasks involved include but are not limited to the following: programming, installation and configuration of software, design of software
-                        research, testing, collaboration with teammates and other stakeholders, and documentation. The software developer may also assume the role of consultant. The role largely involves assisting or advising clients in the field of software development. Other roles and tasks may be assigned as needed.
-                        <i class="fa fa-quote-right fa-fw pull-right"></i>
+                     <p>
+                        The role of the software developer is the creation of software. The tasks involved include but are not limited to the following programming, installation and configuration of software, design of software research, testing, collaboration with teammates and other stakeholders, and documentation. The software developer may also assume the role of consultant. The role largely involves assisting or advising clients in the field of software development. Other roles and tasks may be assigned as needed.
                      </p>
                   </div>
-                  
                </div>
                <!-- end timeline-body -->
             </li>
+            
             <li>
                <!-- begin timeline-icon -->
                <div class="timeline-icon">
@@ -154,7 +193,7 @@
                </div>
                <!-- begin timeline-body -->
                <div class="timeline-body">
-                   Graduated College
+                   Graduated from college
                </div>
                <!-- begin timeline-body -->
             </li>
@@ -168,7 +207,7 @@
    <div class="">
       <img class="uk-invisible" width="600" height="400" alt="">
       <div class="uk-position-cover uk-flex uk-flex-center uk-flex-middle">
-         <div class="uk-heading-large uppercase m-t-60 font-color-white font-weight-300">SKILLS</div>
+         <div class="uk-heading-large uppercase m-t-60 font-color-white font-weight-300">SKILL SET</div>
       </div>
    </div>
 </div>
@@ -220,10 +259,6 @@
                     </div>
                 </div>
             </div>
-          
-            
-          
-            
       </div>
    </div>
 </div>
