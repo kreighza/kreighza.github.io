@@ -1,82 +1,9 @@
-<!DOCTYPE html>
-<!--<html class="uk-height-1-1">-->
-<html class="uk-height-viewport">
+---
+layout: default
+active: index
+---
 
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Kreisa Moralde</title>
-    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-">
-
-    <link rel="stylesheet" href="/assets/uikit/css/components/dotnav.css">
-    <link rel="stylesheet" href="/assets/uikit/css/components/tooltip.css">
-    <link rel="stylesheet" href="/assets/uikit/css/components/slideshow.css">
-    <link rel="stylesheet" href="/assets/uikit/css/components/slidenav.css">
-    <link rel="stylesheet" href="/assets/uikit/css/uikit.css">
-    <link rel="stylesheet" href="/css/main.css">
-    
-    <script src="/assets/jquery/dist/jquery.js"></script>
-    <script src="/assets/uikit/js/uikit.min.js"></script>
-    <script src="/assets/uikit/js/components/sticky.js"></script>
-    <script src="/assets/uikit/js/components/tooltip.js"></script>
-    <script src="/assets/uikit/js/components/lightbox.js"></script>
-    <script src="/assets/uikit/js/components/slideshow.js"></script>
-    <script src="/assets/uikit/js/core/core.min.js"></script>
-    <script src="/assets/uikit/js/core/utility.js"></script>
-    <script src="/assets/uikit/js/core/nav.min.js"></script>
-    <script src="/assets/uikit/js/core/grid.min.js"></script>
-    <script src="/assets/uikit/js/core/modal.js"></script>
-    <script src="/assets/uikit/js/core/alert.js"></script>
-    <script src="/assets/uikit/js/core/smooth-scroll.min.js"></script>
-    
-    <link rel="canonical" href="http://http://kreighza.github.io/">
-    <link rel="alternate" type="application/rss+xml" title="Kreisa Moralde" href="http://http://kreighza.github.io/feed.xml" />
-</head>
-
-    
-  <body class="uk-height-viewport" id="home">
-
-    <nav class="uk-sticky-placeholder uk-navbar font-family-regular" style="z-index: 1000;" data-uk-sticky="{top:-400, animation: 'uk-animation-slide-top'}">
-
-    <div class="uk-container uk-container-center uppercase">
-        
-        <ul class="uk-navbar-nav uk-hidden-small">
-            
-            
-                
-                    
-                        
-                    
-
-                <li class="first uk-active ">
-                    <a class="uk-active" href="/index.html">home</a>
-                </li>
-            
-                
-                    
-
-                <li class="  ">
-                    <a class="" href="/blog.html">blog</a>
-                </li>
-            
-                
-                    
-
-                <li class="  last">
-                    <a class="" href="/contact.html">contact</a>
-                </li>
-            
-        </ul>
-        <a href="#offcanvas-1" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas=""></a>
-    </div>
-    
-
-</nav>
-
-    <div style="
+<div style="
     width: 100px;
     position: fixed;
     right: 0;
@@ -102,18 +29,18 @@
                             </figure>
                         </div>
 
-          <div class="uk-heading-large uppercase m-t-60 font-color-blue font-weight-400">Kreisa Moralde</div>
-          <div class="uppercase font-size-regular"> Software Developer & Traveler </div>
-          <div class="uppercase font-size-regular"> Philippines </div>
+          <div class="uk-heading-large uppercase m-t-60 font-color-blue font-weight-400">{{ site.title }}</div>
+          <div class="uppercase font-size-regular"> {{ site.job_title1 }} & {{ site.job_title2 }} </div>
+          <div class="uppercase font-size-regular"> {{ site.current_location }} </div>
           <ul class="inline-list list-m-20 m-t-100" style="padding-left: 0px;">
              <li>
-                <a href="https://github.com/breisamoralde?tab=activity" target="_blank"> <i class="uk-icon-github-alt uk-icon-large"></i></a>
+                <a href="{{ site.github }}" target="_blank"> <i class="uk-icon-github-alt uk-icon-large"></i></a>
              </li>
              <li>
-                <a href="https://gitlab.com/u/zeitgeist" target="_blank"> <i class="uk-icon-git-square uk-icon-large"></i></a>
+                <a href="{{ site.gitlab }}" target="_blank"> <i class="uk-icon-git-square uk-icon-large"></i></a>
              </li>
              <li>
-                <a href="https://ph.linkedin.com/pub/breisa-moralde/35/7b1/2a1" target="_blank"><i class="uk-icon-linkedin uk-icon-large"></i></a>
+                <a href="{{ site.linkedin }}" target="_blank"><i class="uk-icon-linkedin uk-icon-large"></i></a>
              </li>
           </ul>
        </div>
@@ -128,7 +55,7 @@
           <img class="uk-invisible" width="600" height="400" alt="">
           <div class="uk-position-cover" style="text-align: center; z-index: 100;">
              <div class="uk-heading-large uppercase m-t-150 font-color-white font-weight-400">EXPERIENCE</div>
-             <div class="font-weight-400 font-size-regular font-color-white">Kreisa has been a Software Developer for 3 years and 10 months. </div>
+             <div class="font-weight-400 font-size-regular font-color-white">Kreisa has been a Software Developer for {{ site.jobStart | timeago }}. </div>
           </div>
        </div>
         <div class="blue-overlay"></div>
@@ -138,12 +65,12 @@
        <div class="uk-container uk-container-center uk-text-center font-family-light" >
           <div class="container p-t-100 p-b-100">
              <ul class="timeline">
-                
+                {% for exp in site.workExperience %}
                 <li>
                    <!-- begin timeline-time -->
                    <div class="timeline-time">
-                      <span class="date">January 1, 2013</span>
-                      <span class="time">to Present </span>
+                      <span class="date">{{ exp.durationStart }}</span>
+                      <span class="time">to {{ exp.durationEnd }} </span>
                    </div>
                    <!-- end timeline-time -->
                    <!-- begin timeline-icon -->
@@ -154,57 +81,26 @@
                    <!-- begin timeline-body -->
                    <div class="timeline-body">
                       <div class="timeline-header">
-                         <div class="timeline-header-company-logo"><img src="images/synacy.png"  width="100px"/></div>
-                         <div>Software Developer</div>
-                         <div><a href="http://synacy.com/"> Synacy</a> ( Cebu, Philippines ) </div>
-                           
-                                                    
-                          
+                         <div class="timeline-header-company-logo"><img src="{{ exp.companyLogo }}"  width="100px"/></div>
+                         <div>{{ exp.jobTitle }}</div>
+                         <div><a href="{{ exp.companyUrl }}"> {{ exp.company }}</a> ( {{ exp.location }} ) </div>
+                          {% if exp.durationEnd == 'Present'  %} 
+                            {% assign endDate = site.time %}                        
+                          {% else %}
+                            {% assign endDate = exp.durationEnd %}
+                          {% endif %}
 
-                          <div>January 1, 2013 – Present ( 2 years and 8 months ) </div>
+                          <div>{{ exp.durationStart }} – {{ exp.durationEnd }} ( {{ exp.durationStart | timeago : endDate }} ) </div>
                        </div>
                       <div class="timeline-content">
                          <p>
-                            Synacy is a technology company. Interests within the wider group are diverse, ranging from mineral exploration headquartered in Canada to information technology and telecommunications businesses in Singapore and Australia. The senior management is Australian and Cebu based.Our software development projects provide interesting technical challenges including scaling a high volume transactional system, optimising and building APIs for our partners and developing exciting front end products. We also have a few new ideas that will keep things interesting. We employ agile development methods utilising Java, Grails, Spring, PostgreSQL and LAMP.
+                            {{ exp.jobDescription }}
                          </p>
                       </div>
                    </div>
                    <!-- end timeline-body -->
                 </li>
-                
-                <li>
-                   <!-- begin timeline-time -->
-                   <div class="timeline-time">
-                      <span class="date">December 1, 2011</span>
-                      <span class="time">to Present </span>
-                   </div>
-                   <!-- end timeline-time -->
-                   <!-- begin timeline-icon -->
-                   <div class="timeline-icon">
-                      <a href="javascript:;"><i class="uk-icon-briefcase uk-icon-small l-h-50"></i></a>
-                   </div>
-                   <!-- end timeline-icon -->
-                   <!-- begin timeline-body -->
-                   <div class="timeline-body">
-                      <div class="timeline-header">
-                         <div class="timeline-header-company-logo"><img src="images/onb.jpg"  width="100px"/></div>
-                         <div>Software Developer</div>
-                         <div><a href="http://orangeandbronze.com/"> Orange and Bronze</a> ( Makati, Philippines ) </div>
-                           
-                                                    
-                          
-
-                          <div>December 1, 2011 – Present ( 3 years and 10 months ) </div>
-                       </div>
-                      <div class="timeline-content">
-                         <p>
-                            The role of the software developer is the creation of software. The tasks involved include but are not limited to the following programming, installation and configuration of software, design of software research, testing, collaboration with teammates and other stakeholders, and documentation. The software developer may also assume the role of consultant. The role largely involves assisting or advising clients in the field of software development. Other roles and tasks may be assigned as needed.
-                         </p>
-                      </div>
-                   </div>
-                   <!-- end timeline-body -->
-                </li>
-                
+                {% endfor %}
                 <li>
                    <!-- begin timeline-icon -->
                    <div class="timeline-icon">
@@ -212,11 +108,11 @@
                    </div>
                    <!-- end timeline-icon -->
                    <div class="timeline-time">
-                      <span class="date-only">November 2011</span>
+                      <span class="date-only">{{ site.graduatedDate }}</span>
                    </div>
                    <!-- begin timeline-body -->
                    <div class="timeline-body">
-                       Graduated from college
+                       {{ site.graduatedText }}
                    </div>
                    <!-- begin timeline-body -->
                 </li>
@@ -234,7 +130,7 @@
           <img class="uk-invisible" width="600" height="400" alt="">
           <div class="uk-position-cover" style="text-align: center; z-index: 100;">
              <div class="uk-heading-large uppercase m-t-150 font-color-white font-weight-400">SKILL SET</div>
-             <div class="font-weight-400 font-size-regular font-color-white">Some of the frameworks Kreisa has used in her projects.</div>
+             <div class="font-weight-400 font-size-regular font-color-white">{{ site.skillSet_info }}</div>
           </div>
        </div>
     </div>
@@ -303,25 +199,19 @@
 
     <div class="kr-section"  >
        <div class="uk-container uk-container-center uk-text-left font-family-light">
-        
+        {% for project in site.projects %}
             <div class="uk-grid">
 
             <div class="uk-width-medium-1-2">
                 <div class="uk-slidenav-position" data-uk-slideshow="{animation: 'swipe', autoplay:false}">
                     <ul class="uk-slideshow" style="height: 411px;">
-                        
+                        {% for image in project.images %}
                         <li aria-hidden="true" class="" style="height: 411px;">
                             <div class="uk-cover-background uk-position-cover uk-animation-scale uk-animation-reverse uk-animation-middle-left" 
-                                 style="background-image: url(images/projects/uikitcomplete/uikitcomplete2.png);"></div>
-                            <img src="images/projects/uikitcomplete/uikitcomplete2.png" width="800" height="400" alt="" style="width: 100%; height: 411 px;">
+                                 style="background-image: url({{ image }});"></div>
+                            <img src="{{ image }}" width="800" height="400" alt="" style="width: 100%; height: 411 px;">
                         </li>
-                        
-                        <li aria-hidden="true" class="" style="height: 411px;">
-                            <div class="uk-cover-background uk-position-cover uk-animation-scale uk-animation-reverse uk-animation-middle-left" 
-                                 style="background-image: url(images/projects/uikitcomplete/uikitcomplete1.png);"></div>
-                            <img src="images/projects/uikitcomplete/uikitcomplete1.png" width="800" height="400" alt="" style="width: 100%; height: 411 px;">
-                        </li>
-                        
+                        {% endfor %}
                     </ul>
                     <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous" style="color: rgba(255,255,255,0.4)"></a>
                     <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next" style="color: rgba(255,255,255,0.4)"></a>
@@ -329,111 +219,20 @@
             </div>
                 
             <div class="uk-width-medium-1-2">
-                <h1><a href="https://atmospherejs.com/coffeejesus/uikit-complete"  target="_blank">Uikit Complete Package for Meteor</a></h1>
+                <h1><a href="{{ project.link }}"  target="_blank">{{ project.title }}</a></h1>
                 
-                <p>Uikit Complete is a meteor package I personally created so that I could easily integrate UIkit into my meteor projects. At that time, I could not find an updated and complete version, so I made one myself. It is currently being maintained.</p>
+                <p>{{ project.description }}</p>
             
                 <br/>
                 made with:
                 <br/>
-                
-                    <div class="uk-badge">git</div>
-                
-                    <div class="uk-badge">meteor</div>
-                
+                {% for tech in project.techUsed %}
+                    <div class="uk-badge">{{ tech }}</div>
+                {% endfor %}
 
             </div>
             </div>        
-        
-            <div class="uk-grid">
-
-            <div class="uk-width-medium-1-2">
-                <div class="uk-slidenav-position" data-uk-slideshow="{animation: 'swipe', autoplay:false}">
-                    <ul class="uk-slideshow" style="height: 411px;">
-                        
-                        <li aria-hidden="true" class="" style="height: 411px;">
-                            <div class="uk-cover-background uk-position-cover uk-animation-scale uk-animation-reverse uk-animation-middle-left" 
-                                 style="background-image: url(images/projects/azazel/azazel1.png);"></div>
-                            <img src="images/projects/azazel/azazel1.png" width="800" height="400" alt="" style="width: 100%; height: 411 px;">
-                        </li>
-                        
-                        <li aria-hidden="true" class="" style="height: 411px;">
-                            <div class="uk-cover-background uk-position-cover uk-animation-scale uk-animation-reverse uk-animation-middle-left" 
-                                 style="background-image: url(images/projects/azazel/azazel2.png);"></div>
-                            <img src="images/projects/azazel/azazel2.png" width="800" height="400" alt="" style="width: 100%; height: 411 px;">
-                        </li>
-                        
-                        <li aria-hidden="true" class="" style="height: 411px;">
-                            <div class="uk-cover-background uk-position-cover uk-animation-scale uk-animation-reverse uk-animation-middle-left" 
-                                 style="background-image: url(images/projects/azazel/azazel3.png);"></div>
-                            <img src="images/projects/azazel/azazel3.png" width="800" height="400" alt="" style="width: 100%; height: 411 px;">
-                        </li>
-                        
-                        <li aria-hidden="true" class="" style="height: 411px;">
-                            <div class="uk-cover-background uk-position-cover uk-animation-scale uk-animation-reverse uk-animation-middle-left" 
-                                 style="background-image: url(images/projects/azazel/azazel4.png);"></div>
-                            <img src="images/projects/azazel/azazel4.png" width="800" height="400" alt="" style="width: 100%; height: 411 px;">
-                        </li>
-                        
-                    </ul>
-                    <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous" style="color: rgba(255,255,255,0.4)"></a>
-                    <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next" style="color: rgba(255,255,255,0.4)"></a>
-                </div>
-            </div>
-                
-            <div class="uk-width-medium-1-2">
-                <h1><a href="none"  target="_blank">AzazelRO</a></h1>
-                
-                <p>AzazelRO is an attempt at creating our very own private server for the classic game "Ragnarok Online". Most of my responsibilities include server setup (using Ubuntu in Digital Ocean), making the website where people can register for the game, and setting up robrowser for it the game to be playable on the browser too. Development has been discontinued.</p>
-            
-                <br/>
-                made with:
-                <br/>
-                
-                    <div class="uk-badge">grails 2.4.4</div>
-                
-                    <div class="uk-badge">html</div>
-                
-                    <div class="uk-badge">css</div>
-                
-                    <div class="uk-badge">mysql</div>
-                
-                    <div class="uk-badge">php5</div>
-                
-                    <div class="uk-badge">nginx</div>
-                
-                    <div class="uk-badge">hercules</div>
-                
-
-            </div>
-            </div>        
-        
+        {% endfor %}
        </div>
     </div>
 </div>
-    
-    <!--
-<span class="font-regular"> Kreisa Moralde </span>
-wiiGenocide@gmail.com
-
--->
-
-<div class="bg-black font-color-white">
-    <div class="uk-container uk-container-center uk-text-center p-t-50 p-b-50">
-
-        <ul class="uk-subnav uk-subnav-line uk-flex-center">
-            <li><a href="https://github.com/kreighza/kreighza.github.io">GitHub</a></li>
-        </ul>
-
-        <div class="uk-panel">
-            <p>Made by <a href="#"> Kreisa Moralde </a></p>
-        </div>
-
-    </div>
-</div>
-    
-
-
-  </body>
-
-</html>

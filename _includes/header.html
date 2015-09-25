@@ -1,0 +1,22 @@
+<nav class="uk-sticky-placeholder uk-navbar font-family-regular" style="z-index: 1000;" data-uk-sticky="{top:-400, animation: 'uk-animation-slide-top'}">
+
+    <div class="uk-container uk-container-center uppercase">
+        
+        <ul class="uk-navbar-nav uk-hidden-small">
+            
+            {% for link in site.navigation %}
+                {% assign current = nil %}
+                    {% if page.url == link.url or page.layout == link.layout %}
+                        {% assign current = 'uk-active' %}
+                    {% endif %}
+
+                <li class="{% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}">
+                    <a class="{{ current }}" href="{{ link.url }}">{{ link.text }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+        <a href="#offcanvas-1" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas=""></a>
+    </div>
+    
+
+</nav>
