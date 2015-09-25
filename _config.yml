@@ -51,8 +51,31 @@ graduatedText: Graduated from college
 graduatedDate: November 2011
 
 projects:
-- title: 'Uikit Complete for Meteor'
-  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+- title: Uikit Complete Package for Meteor
+  images: 
+    - images/projects/uikitcomplete/uikitcomplete2.png
+    - images/projects/uikitcomplete/uikitcomplete1.png
+  techUsed: 
+    - git
+    - meteor
+  link: https://atmospherejs.com/coffeejesus/uikit-complete
+  description: Uikit Complete is a meteor package I personally created so that I could easily integrate UIkit into my meteor projects. At that time, I could not find an updated and complete version, so I made one myself. It is constantly updated and maintained with the latest version of Uikit. 
+- title: AzazelRO
+  images: 
+    - images/projects/azazel/azazel1.png
+    - images/projects/azazel/azazel2.png
+    - images/projects/azazel/azazel3.png
+    - images/projects/azazel/azazel4.png
+  techUsed: 
+    - grails 2.4.4
+    - html
+    - css
+    - mysql
+    - php5
+    - nginx
+    - hercules
+  link: none
+  description: AzazelRO is an attempt at creating our very own private server for the classic game "Ragnarok Online". Most of my responsibilities include server setup (using Ubuntu in Digital Ocean), making the website where people can register for the game, and setting up robrowser for it the game to be playable on the browser too. Development has been discontinued.
 
 jekyll_timeago:
   today: 'today'
