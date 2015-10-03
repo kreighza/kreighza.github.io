@@ -23,8 +23,13 @@ navigation:
 - text: contact
   url: /contact.html
   
+photo_credits:
+- author: Luis Llerena
+  source: https://unsplash.com/negativespace
+- author: Vadim Sherbakov
+  source: https://unsplash.com/madebyvadim
+  
 skillSet_info: Some of the frameworks Kreisa has used in her projects.
-
 jobStart: December 1, 2011
 
 # List work experience here.
