@@ -134,6 +134,16 @@ ul.list-m-20 li {
 .p-b-50 {
   padding-bottom: 50px !important; }
 
+.p-50 {
+  padding: 50px !important; }
+
+.p-0 {
+  padding: 0px !important; }
+
+.p-lr-0 {
+  padding-left: 0px !important;
+  padding-right: 0px !important; }
+
 /* Line Height
  ========================================================================== */
 .l-h-50 {
@@ -148,14 +158,14 @@ ul.list-m-20 li {
 .filter-grey:hover {
   -webkit-filter: grayscale(30%);
   filter: grayscale(30%);
-  -webkit-transition: filter 100ms ease-out 1s;
-  -moz-transition: filter 100ms ease-out 1s;
-  -o-transition: filter 100ms ease-out 1s;
-  transition: filter 100ms ease-out 1s;
-  -webkit-transition: -webkit-filter 100ms ease-out 1s;
-  -moz-transition: -webkit-filter 100ms ease-out 1s;
-  -o-transition: -webkit-filter 100ms ease-out 1s;
-  transition: -webkit-filter 100ms ease-out 1s; }
+  -webkit-transition: filter 100ms ease-out 100ms;
+  -moz-transition: filter 100ms ease-out 100ms;
+  -o-transition: filter 100ms ease-out 100ms;
+  transition: filter 100ms ease-out 100ms;
+  -webkit-transition: -webkit-filter 100ms ease-out 100ms;
+  -moz-transition: -webkit-filter 100ms ease-out 100ms;
+  -o-transition: -webkit-filter 100ms ease-out 100ms;
+  transition: -webkit-filter 100ms ease-out 100ms; }
 
 /* Height
  ========================================================================== */
