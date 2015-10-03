@@ -23,6 +23,40 @@ navigation:
 - text: contact
   url: /contact.html
   
+skill_set_list:
+- text: MeteorJS
+  source: https://www.meteor.com/
+  color: DE4F4F
+  img: images/skills/meteor.png
+- text: Firebase
+  source: https://www.firebase.com/
+  color: ECE970
+  img: images/skills/firebase.png
+- text: AngularJS
+  source: https://angularjs.org/
+  color: DE5C4F
+  img: images/skills/angularJS.png
+- text: HTML5
+  source: http://www.w3schools.com/html/html5_intro.asp
+  color: DE7E4F
+  img: images/skills/html5.png
+- text: Grails
+  source: http://www.grails.org
+  color: 86DE4F
+  img: images/skills/grails.jpg
+- text: Jekyll
+  source: http://jekyllrb.com/
+  color: 9D9898
+  img: images/skills/jekyll.png
+- text: CSS3
+  source: http://www.w3schools.com/css/css3_intro.asp
+  color: 4FCEDE
+  img: images/skills/css3.png
+- text: Git
+  source: https://git-scm.com/
+  color: 443C35
+  img: images/skills/git.png
+  
 photo_credits:
 - author: Luis Llerena
   source: https://unsplash.com/negativespace
