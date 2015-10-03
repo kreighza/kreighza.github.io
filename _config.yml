@@ -1,5 +1,5 @@
 # Site settings
-title: Kreisa Moralde
+title: KR Dvorak
 job_title1: Software Developer
 job_title2: Traveler    
 current_location: Philippines    
@@ -28,8 +28,14 @@ photo_credits:
   source: https://unsplash.com/negativespace
 - author: Vadim Sherbakov
   source: https://unsplash.com/madebyvadim
-  
+
+experience_title: EXPERIENCE
+experience_prefix: Kreisa has been a Software Developer for 
+skillSet_title: SKILL SET
 skillSet_info: Some of the frameworks Kreisa has used in her projects.
+project_title: PROJECTS
+project_info: Stuff Kreisa has been up to.
+
 jobStart: December 1, 2011
 
 # List work experience here.
