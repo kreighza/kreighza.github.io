@@ -4,10 +4,10 @@
 .font-family-regular a,
 .font-family-regular ul li a,
 .font-family-regular {
-  font-family: "Source Sans Pro", serif; }
+  font-family: "Source Sans Pro", sans-serif; }
 
 .font-family-light {
-  font-family: "Source Sans Pro", serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 200; }
 
 /* Font Size
@@ -34,6 +34,9 @@
 
 .font-weight-200 {
   font-weight: 200; }
+
+.font-weight-100 {
+  font-weight: 100; }
 
 /* Font Colors
  ========================================================================== */
@@ -167,7 +170,7 @@ ul.list-m-20 li {
 
 body, h1, h2, h3, h4, h5, h6,
 .uk-navbar-nav > li > a {
-  font-family: "Source Sans Pro", serif; }
+  font-family: "Source Sans Pro", sans-serif; }
 
 a {
   color: #383D41; }
