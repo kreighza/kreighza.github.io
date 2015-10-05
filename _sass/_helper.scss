@@ -24,7 +24,7 @@
 }
 
 .font-size-regular {
-    font-size: 20px;
+    font-size: $font-size-regular;
 }
 
 .font-size-small {
@@ -56,7 +56,7 @@
 }
 
 .font-color-white,
-.font-color-white a, {
+.font-color-white a {
     color: $white !important;
 }
 
@@ -99,6 +99,11 @@
 .bg-blue {
     background: $blue;
     background-color: $blue;
+}
+
+.bg-red {
+    background: $red;
+    background-color: $red;
 }
 
 .bg-stars {
@@ -200,15 +205,15 @@ ul.list-m-20 li {
     -webkit-filter: grayscale(30%);
 	filter: grayscale(30%);
     
-    -webkit-transition: filter 100ms ease-out 100ms;
-    -moz-transition: filter 100ms ease-out 100ms;
-    -o-transition: filter 100ms ease-out 100ms;
-    transition: filter 100ms ease-out 100ms;
+    -webkit-transition: filter 0.3s ease;
+    -moz-transition: filter 0.3s ease;
+    -o-transition: filter 0.3s ease;
+    transition: filter 0.3s ease;
     
-    -webkit-transition: -webkit-filter 100ms ease-out 100ms;
-    -moz-transition: -webkit-filter 100ms ease-out 100ms;
-    -o-transition: -webkit-filter 100ms ease-out 100ms;
-    transition: -webkit-filter 100ms ease-out 100ms;
+    -webkit-transition: -webkit-filter 0.3s ease;
+    -moz-transition: -webkit-filter 0.3s ease;
+    -o-transition: -webkit-filter 0.3s ease;
+    transition: -webkit-filter 0.3s ease;
 }
 
 /* Height
