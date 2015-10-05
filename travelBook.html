@@ -1,0 +1,33 @@
+---
+layout: default
+active: blog
+---
+<div class="uk-height-viewport">
+    <div class="kr-section">
+       <div class="uk-container uk-container-center uk-text-center font-family-light">
+           <div class="m-t-60">
+                
+                              
+                <div class="uk-grid" data-uk-grid-margin="">
+
+                    <div class="uk-width-medium-1-2">
+                        <img width="660" height="400" src="images/travelBook/travelBag/travelBag.svg" alt="">
+                    </div>
+
+                    <div class="uk-width-medium-1-2">
+                            <h1>{{ site.travelBook_title }}</h1>
+                            <p>{{ site.travelBook_intro}}</p>
+                    </div>
+                </div>
+               
+           </div>
+       </div>
+    </div>
+</div>
+
+
+<div id="map" style="height: 80%;">
+</div>
+
+<script src="/javascript/tavelBook.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?{{ site.google_maps_broswer_key }}&callback=travelBook.init"></script>

@@ -14,10 +14,16 @@ url: "http://http://kreighza.github.io" # the base hostname & protocol for your 
 github: https://github.com/breisamoralde?tab=activity
 gitlab: https://gitlab.com/u/zeitgeist
 linkedin: https://ph.linkedin.com/pub/breisa-moralde/35/7b1/2a1
+google_maps_broswer_key: AIzaSyDHNeP7Tfl6Y-d-h7oXJlSxLyCc8rGkjTY
+
+travelBook_title: Hey There!
+travelBook_intro: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
 navigation:
 - text: home
   url: /index.html
+- text: travelBook
+  url: /travelBook.html
 - text: blog
   url: /blog.html
 - text: contact
