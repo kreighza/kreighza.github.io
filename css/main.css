@@ -82,6 +82,10 @@
   background: #E46F67;
   background-color: #E46F67; }
 
+.bg-green {
+  background: #50CCA9;
+  background-color: #50CCA9; }
+
 .bg-stars {
   background: url("../images/bg-stars.jpg");
   background-size: 100% 100%;
@@ -306,7 +310,7 @@ a:hover {
 /* Effect 1a */
 .hi-icon-effect-1a .hi-icon:hover {
   background: white;
-  color: #E46F67; }
+  color: #50CCA9; }
 
 .hi-icon-effect-1a .hi-icon:hover:after {
   -webkit-transform: scale(1);
