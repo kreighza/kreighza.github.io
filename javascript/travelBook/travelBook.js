@@ -2,32 +2,24 @@ var map = (function() {
     
     var travelledMap;
     var visitedPlaces;
+    var geocoder;
     
     return {
         init: init
     };
     
     function init(places) {
+        geocoder = new google.maps.Geocoder();
         travelledMap = new google.maps.Map(document.getElementById('map'), {
             center: {lat: 13.0000, lng: 122.0000},
             zoom: 5,
             scrollwheel: false,
             styles: getStyle()
         }); 
-        
-        var markers = [];
-        
+                
         places.forEach(function(place) {
-            var marker = new google.maps.Marker({
-                position: {lat: place.latitude, lng: place.longitude},
-                map: travelledMap,
-                title: place.name
-            });
-            
-            markers.push(marker);
+            markOnMap(place);
         });
-        
-        console.log(markers);
     }
     
     function styleWrapper(featureType, elementType, stylers) {
@@ -47,6 +39,20 @@ var map = (function() {
                 styleWrapper('transit.line', 'geometry', [{'visibility': 'on', 'lightness': 700}]),
                 styleWrapper('water', 'all', [{'color': '#7dcdcd'}])                
             ];
+    }
+    
+    function markOnMap(place) {
+        geocoder.geocode({'address': place.name}, function(results, status) {
+            if (status === google.maps.GeocoderStatus.OK) {
+                var marker = new google.maps.Marker({
+                    position: results[0].geometry.location,
+                    map: travelledMap,
+                    title: place.name
+                });
+            } else {
+                console.error('Cannot find coordinates for ' + place.name + ' because: ' + status);
+            }
+        });
     }
 })();
 
