@@ -11,23 +11,36 @@ var visitedPlaces = (function(){
     };
     
     function init() {
+        geocoder = new google.maps.Geocoder();
+        
         places = [
-            new visitedPlace('Ho Chi Minh, Vietnam', 106.6667, 10.7500),
-            new visitedPlace('Singapore', 103.8000, 1.3000),
-            new visitedPlace('Cebu, Philippines', 123.9000 ,10.2800)
+            new visitedPlace('Ho Chi Minh, Vietnam'),
+            new visitedPlace('Singapore'),
+            new visitedPlace('Hongkong'),
+            new visitedPlace('Macau'),
+            new visitedPlace('Cebu, Philippines'),
+            new visitedPlace('Makati, Philippines'),
+            new visitedPlace('Cagayan de oro, Philippines'),
+            new visitedPlace('Bantayan Island, Philippines'),
+            new visitedPlace('Bohol, Philippines'),
+            new visitedPlace('Baguio, Philippines'),
+            new visitedPlace('Laguna, Philippines'),
+            new visitedPlace('Batangas, Philippines'),
+            new visitedPlace('Bangkok, Thailand'),
+            new visitedPlace('Johor, Malaysia')
         ];
         
-        console.log(places);
+        $('div.places-visited-total').html(places.length);
     }
     
     function getAllPlaces() {
         return places;
     }
     
-    function visitedPlace(name, long, lat) {
+    function visitedPlace(name) {
         this.name = name;
-        this.longitude = long;
-        this.latitude = lat;
     }
+    
+    
 })();
 
