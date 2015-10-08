@@ -6,9 +6,12 @@
 .font-family-regular {
   font-family: "Source Sans Pro", sans-serif; }
 
-.font-family-light {
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 200; }
+.font-family-light,
+.font-family-light h1,
+.font-family-light p,
+.font-family-light a {
+  font-family: "Source Sans Pro", sans-serif !important;
+  font-weight: 200 !important; }
 
 /* Font Size
  ========================================================================== */
@@ -44,7 +47,15 @@
   color: #00A8E6; }
 
 .font-color-white,
-.font-color-white a {
+.font-color-white h1,
+.font-color-white h2,
+.font-color-white h3,
+.font-color-white h4,
+.font-color-white a,
+h1.font-color-white,
+h2.font-color-white,
+h3.font-color-white,
+h4.font-color-white {
   color: #FFFFFF !important; }
 
 /* Font Effects
@@ -85,6 +96,10 @@
 .bg-green {
   background: #50CCA9;
   background-color: #50CCA9; }
+
+.bg-dark-green {
+  background: #4BA289;
+  background-color: #4BA289; }
 
 .bg-stars {
   background: url("../images/bg-stars.jpg");
