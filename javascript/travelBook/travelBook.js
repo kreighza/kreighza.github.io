@@ -14,6 +14,8 @@ var map = (function() {
             center: {lat: 13.0000, lng: 122.0000},
             zoom: 5,
             scrollwheel: false,
+            mapTypeControl: false,
+            streetViewControl: false,
             styles: getStyle()
         }); 
                 
@@ -32,7 +34,7 @@ var map = (function() {
     
     function getStyle() {
         return [ 
-                styleWrapper('landscape.natural', 'geometry.fill', [{ 'visibility':'on','color': '#e0efef' }]),
+                styleWrapper('landscape.natural', 'geometry.fill', [{ 'visibility':'off'}]),
                 styleWrapper('poi', 'geometry.fill', [{'visibility': 'on'},{'hue': '#1900ff'},{'color': '#c0e8e8'}]),
                 styleWrapper('road', 'geometry', [{'lightness': 100},{'visibility': 'simplified'}]),
                 styleWrapper('road', 'labels', [{'visibility': 'off'}]),
