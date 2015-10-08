@@ -1,6 +1,4 @@
 //TODO: Add all places I've visited here!
-
-
 var visitedPlaces = (function(){
     
     var places = [];

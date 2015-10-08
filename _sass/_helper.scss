@@ -7,9 +7,12 @@
     font-family: $base-font-family;
 }
 
-.font-family-light {
-    font-family: $base-font-family;
-    font-weight: 200;
+.font-family-light,
+.font-family-light h1,
+.font-family-light p,
+.font-family-light a{
+    font-family: $base-font-family !important;
+    font-weight: 200 !important;
 }
 
 /* Font Size
@@ -56,7 +59,15 @@
 }
 
 .font-color-white,
-.font-color-white a {
+.font-color-white h1,
+.font-color-white h2,
+.font-color-white h3,
+.font-color-white h4,
+.font-color-white a,
+h1.font-color-white,
+h2.font-color-white,
+h3.font-color-white,
+h4.font-color-white {
     color: $white !important;
 }
 
@@ -109,6 +120,11 @@
 .bg-green {
     background: $green;
     background-color: $green;
+}
+
+.bg-dark-green {
+    background: $dark-green;
+    background-color: $dark-green;
 }
 
 .bg-stars {
