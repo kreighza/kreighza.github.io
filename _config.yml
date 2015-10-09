@@ -19,13 +19,21 @@ linkedin: https://ph.linkedin.com/pub/breisa-moralde/35/7b1/2a1
 google_maps_broswer_key: AIzaSyDHNeP7Tfl6Y-d-h7oXJlSxLyCc8rGkjTY
 
 travelBook_title: Hey There!
-travelBook_intro: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+travelBook_intro: If you are reading this, then welcome to my itenerary! I am an avid traveler! Traveling has been one of my only vices in life. I have been to a lot of places and I am keen to see and experience more! This page documents the places I have been to, the places where I want to go and the little adventures and mishaps that went along with it! :)
+
+travelBook_trivia:
+- answer: 0
+  question: Total places visited
+- answer: eat
+  question: Must do when traveling
+- answer: SG
+  question: Next Destination
 
 navigation:
 - text: home
   url: /index.html
-- text: travelBook
-  url: /travelBook.html
+- text: itenerary
+  url: /itenerary/
 - text: blog
   url: /blog.html
 - text: contact
