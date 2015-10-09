@@ -14,16 +14,16 @@ permalink: itenerary/
                     </div>
 
                     <div class="uk-width-medium-1-2 p-t-100 ">
-                        <h1 class="font-color-white">{{ site.travelBook_title }}</h1>
+                        <h1 class="font-color-white font-size-medium">{{ site.travelBook_title }}</h1>
                         <p class="">{{ site.travelBook_intro }}</p>
 
-                        <div class="uk-grid m-t-60 font-size-regular">
+                        <div class="uk-grid m-t-60">
                             {% for trivia in site.travelBook_trivia %}
                             <div class="uk-width-medium-1-3">
                                 <div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a">
                                     <div class="places-visited-total hi-icon hi-icon-mobile">{{ trivia.answer }}</div>
                                 </div>
-                                <div>{{ tivia.question }}</div>
+                                <div>{{ trivia.question }}</div>
                             </div>
                             {% endfor %}
                         </div>
@@ -36,10 +36,10 @@ permalink: itenerary/
 </div>
 
 <div class="bg-dark-green">
-   <div class="uk-container uk-container-center font-family-light uk-text-center font-size-big font-color-white"
+   <div class="uk-container uk-container-center font-family-light uk-text-center font-size-medium font-color-white"
         style="padding: 35px 0px 35px 0px;">
        <div class="uk-display-inline m-r-10"><i class="uk-icon-map-marker"></i></div> 
-       <div class="uk-display-inline"></div>Places I have been to
+       <div class="uk-display-inline">Places I have been to</div>
    </div>
 </div>
 
