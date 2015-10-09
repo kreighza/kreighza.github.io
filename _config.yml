@@ -127,7 +127,7 @@ projects:
     - php5
     - nginx
     - hercules
-  link: none
+  link: http://azazelro.com
   description: AzazelRO is an attempt at creating our very own private server for the classic game "Ragnarok Online". Most of my responsibilities include server setup (using Ubuntu in Digital Ocean), making the website where people can register for the game, and setting up robrowser for it the game to be playable on the browser too. Development has been discontinued.
 
 jekyll_timeago:
