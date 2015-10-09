@@ -1,4 +1,6 @@
 # Site settings
+exclude: [vendor]
+
 title: KR Dvorak
 job_title1: Software Developer
 job_title2: Traveler    
