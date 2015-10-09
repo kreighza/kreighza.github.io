@@ -49,7 +49,8 @@ var map = (function() {
                 var marker = new google.maps.Marker({
                     position: results[0].geometry.location,
                     map: travelledMap,
-                    title: place.name
+                    title: place.name,
+                    icon: '../images/travelBook/mapMarker.png'
                 });
             } else {
                 console.error('Cannot find coordinates for ' + place.name + ' because: ' + status);

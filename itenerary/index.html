@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>About</title>
+    <title>KR Dvorak</title>
     <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 ">
 
@@ -32,7 +32,7 @@
     <script src="/assets/uikit/js/core/alert.js"></script>
     <script src="/assets/uikit/js/core/smooth-scroll.min.js"></script>
     
-    <link rel="canonical" href="http://http://kreighza.github.io/about/">
+    <link rel="canonical" href="http://http://kreighza.github.io/itenerary/">
     <link rel="alternate" type="application/rss+xml" title="KR Dvorak" href="http://http://kreighza.github.io/feed.xml" />
 </head>
 
@@ -41,6 +41,7 @@
 
     <nav class="uk-sticky-placeholder uk-navbar font-family-regular" style="z-index: 1000;" data-uk-sticky="{top:-400, animation: 'uk-animation-slide-top'}">
 
+    
     <div class="uk-container uk-container-center uppercase">
         
         <ul class="uk-navbar-nav uk-hidden-small">
@@ -55,9 +56,11 @@
             
                 
                     
+                        
+                    
 
-                <li class="  ">
-                    <a class="" href="/travelBook.html">travelBook</a>
+                <li class=" uk-active ">
+                    <a class="uk-active" href="/itenerary/">itenerary</a>
                 </li>
             
                 
@@ -75,29 +78,70 @@
                 </li>
             
         </ul>
-        <a href="#offcanvas-1" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas=""></a>
+<!--        <a href="#offcanvas-1" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas=""></a>-->
     </div>
-    
-
 </nav>
 
-    <div class="post">
+    <div class="uk-height-viewport bg-green">
+    <div class="kr-section">
+       <div class="uk-container uk-container-center uk-text-center font-family-light font-color-white">
+           <div class="m-t-60">
+                <div class="uk-grid" data-uk-grid-margin="">
 
-  <header class="post-header">
-    <h1 class="post-title">About</h1>
-  </header>
+                    <div class="uk-width-medium-1-2">
+                        <img width="647" height="574" class="uk-animation-fade" src="../images/travelBook/travelBag/travelBag.svg" alt="travelBag">
+                    </div>
 
-  <article class="post-content">
-    <p>This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at <a href="http://jekyllrb.com/">jekyllrb.com</a></p>
+                    <div class="uk-width-medium-1-2 p-t-100 ">
+                        <h1 class="font-color-white">Hey There!</h1>
+                        <p class="">If you are reading this, then welcome to my itenerary! I am an avid traveler! Traveling has been one of my only vices in life. I have been to a lot of places and I am keen to see and experience more! This page documents the places I have been to, the places where I want to go and the little adventures and mishaps that went along with it! :)</p>
 
-<p>You can find the source code for the Jekyll new theme at: <a href="https://github.com/jglovier/jekyll-new">github.com/jglovier/jekyll-new</a></p>
-
-<p>You can find the source code for Jekyll at <a href="https://github.com/jekyll/jekyll">github.com/jekyll/jekyll</a></p>
-
-  </article>
-
+                        <div class="uk-grid m-t-60 font-size-regular">
+                            
+                            <div class="uk-width-medium-1-3">
+                                <div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a">
+                                    <div class="places-visited-total hi-icon hi-icon-mobile">0</div>
+                                </div>
+                                <div></div>
+                            </div>
+                            
+                            <div class="uk-width-medium-1-3">
+                                <div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a">
+                                    <div class="places-visited-total hi-icon hi-icon-mobile">eat</div>
+                                </div>
+                                <div></div>
+                            </div>
+                            
+                            <div class="uk-width-medium-1-3">
+                                <div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a">
+                                    <div class="places-visited-total hi-icon hi-icon-mobile">SG</div>
+                                </div>
+                                <div></div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+               
+           </div>
+       </div>
+    </div>
 </div>
 
+<div class="bg-dark-green">
+   <div class="uk-container uk-container-center font-family-light uk-text-center font-size-big font-color-white"
+        style="padding: 35px 0px 35px 0px;">
+       <div class="uk-display-inline m-r-10"><i class="uk-icon-map-marker"></i></div> 
+       <div class="uk-display-inline"></div>Places I have been to
+   </div>
+</div>
+
+<div id="map" style="height: 70%;">
+</div>
+
+<script src="/javascript/travelBook/visitedPlaces.js"></script>
+<script src="/javascript/travelBook/travelBook.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?AIzaSyDHNeP7Tfl6Y-d-h7oXJlSxLyCc8rGkjTY&callback=travelBook.init"></script>
     
     <div class="bg-black font-color-white">
     <div class="uk-container uk-container-center uk-text-center p-t-50 p-b-50 font-weight-100">
