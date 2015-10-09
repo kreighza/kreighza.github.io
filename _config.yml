@@ -24,10 +24,13 @@ travelBook_intro: If you are reading this, then welcome to my itenerary! I am an
 travelBook_trivia:
 - answer: 0
   question: Total places visited
+  id: trivia1
 - answer: eat
   question: Must do when traveling
+  id: trivia2
 - answer: SG
   question: Next Destination
+  id: trivia3
 
 navigation:
 - text: home
