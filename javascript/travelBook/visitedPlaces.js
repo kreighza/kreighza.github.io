@@ -28,7 +28,7 @@ var visitedPlaces = (function(){
             new visitedPlace('Johor, Malaysia')
         ];
         
-        $('div.places-visited-total').html(places.length);
+        $('div.places-visited-total#trivia1').html(places.length);
     }
     
     function getAllPlaces() {
