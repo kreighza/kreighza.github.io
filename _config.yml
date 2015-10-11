@@ -32,13 +32,15 @@ travelBook_trivia:
   question: Next Destination
   id: trivia3
   
-travelBook_photos:
+travelBook_photos1:
 - place: hongkong skyline
   image: ../images/travelBook/photos/photo1.jpg
 - place: gardens by the bay singapore
   image: ../images/travelBook/photos/photo2.jpg
 - place: helix bridge singapore
   image: ../images/travelBook/photos/photo3.jpg
+  
+travelBook_photos2:
 - place: singapore skyline
   image: ../images/travelBook/photos/photo4.jpg
 - place: thailand
@@ -47,6 +49,8 @@ travelBook_photos:
   image: ../images/travelBook/photos/photo6.jpg
 - place: thailand
   image: ../images/travelBook/photos/photo7.jpg
+
+travelBook_photos3:
 - place: vietnam
   image: ../images/travelBook/photos/photo8.jpg
 - place: vietnam
