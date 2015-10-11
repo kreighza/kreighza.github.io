@@ -31,7 +31,29 @@ travelBook_trivia:
 - answer: SG
   question: Next Destination
   id: trivia3
-
+  
+travelBook_photos:
+- place: hongkong skyline
+  image: ../images/travelBook/photos/photo1.jpg
+- place: gardens by the bay singapore
+  image: ../images/travelBook/photos/photo2.jpg
+- place: helix bridge singapore
+  image: ../images/travelBook/photos/photo3.jpg
+- place: singapore skyline
+  image: ../images/travelBook/photos/photo4.jpg
+- place: thailand
+  image: ../images/travelBook/photos/photo5.jpg
+- place: singapore
+  image: ../images/travelBook/photos/photo6.jpg
+- place: thailand
+  image: ../images/travelBook/photos/photo7.jpg
+- place: vietnam
+  image: ../images/travelBook/photos/photo8.jpg
+- place: vietnam
+  image: ../images/travelBook/photos/photo9.jpg
+- place: vietnam
+  image: ../images/travelBook/photos/photo10.jpg
+  
 navigation:
 - text: home
   url: /index.html
