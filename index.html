@@ -134,12 +134,11 @@ active: index
           </div>
        </div>
     </div>
-
-    <div class="uk-grid uk-container uk-container-center m-t-100 m-b-100 p-0">
+    <div class="uk-grid uk-container uk-container-center m-t-100 m-b-100 p-0" data-uk-grid >
         {% for tech in site.skill_set_list %}
-        <div class="uk-width-medium-1-4 font-size-medium uk-text-center p-t-50 p-b-50 p-lr-0" style="color: #{{ tech.color }};">
-            <a href="{{ tech.source }}" target="_blank"><img src="{{ tech.img }}" class="height-50 filter-grey" alt="{{ tech.text }}"/></a>
-        </div>            
+            <div class="uk-grid-width-small-1-2 uk-grid-width-medium-1-4 p-20" style="color: #{{ tech.color }};">
+                <a href="{{ tech.source }}" target="_blank"><img src="{{ tech.img }}" class="height-50 filter-grey" alt="{{ tech.text }}"/></a>
+            </div> 
         {% endfor %}
     </div>
 </div>
