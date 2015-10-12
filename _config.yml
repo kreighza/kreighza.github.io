@@ -121,7 +121,7 @@ jobStart: December 1, 2011
 # First in line would be the latest.
 workExperience:
 - jobTitle: Software Developer
-  durationStart: January 1, 2013
+  durationStart: Jan. 1, 2013
   durationEnd: Present
   location: Cebu, Philippines
   company: Synacy
@@ -129,7 +129,7 @@ workExperience:
   companyLogo: images/synacy.png 
   jobDescription: Synacy is a technology company. Interests within the wider group are diverse, ranging from mineral exploration headquartered in Canada to information technology and telecommunications businesses in Singapore and Australia. The senior management is Australian and Cebu based.Our software development projects provide interesting technical challenges including scaling a high volume transactional system, optimising and building APIs for our partners and developing exciting front end products. We also have a few new ideas that will keep things interesting. We employ agile development methods utilising Java, Grails, Spring, PostgreSQL and LAMP.
 - jobTitle: Software Developer
-  durationStart: December 1, 2011
+  durationStart: Dec. 1, 2011
   durationEnd: Present
   location: Makati, Philippines
   company: Orange and Bronze
@@ -138,7 +138,7 @@ workExperience:
   jobDescription: The role of the software developer is the creation of software. The tasks involved include but are not limited to the following programming, installation and configuration of software, design of software research, testing, collaboration with teammates and other stakeholders, and documentation. The software developer may also assume the role of consultant. The role largely involves assisting or advising clients in the field of software development. Other roles and tasks may be assigned as needed.
 
 graduatedText: Graduated from college
-graduatedDate: November 2011
+graduatedDate: Nov. 2011
 
 projects:
 - title: Uikit Complete Package for Meteor
