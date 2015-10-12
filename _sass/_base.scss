@@ -322,7 +322,7 @@ div.floating-nav {
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
     .timeline .timeline-body {
         margin-left: 27%;
     }
@@ -336,7 +336,26 @@ div.floating-nav {
     }
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 800px) {
+    div#profile.uk-height-viewport {
+        height: auto !important;
+    }
+    
+    .uk-height-viewport {
+        height: auto !important;
+    }
+    
+    .timeline .timeline-body {
+        margin-left: 27%;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    div#profile.uk-height-viewport {
+        height: auto !important;
+    }
+    
     .uk-height-viewport {
         height: auto !important;
     }
@@ -359,6 +378,5 @@ div.floating-nav {
         margin-left: 0px;
         margin-right: 0px;
     }
-    
     
 }
