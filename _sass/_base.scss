@@ -302,3 +302,10 @@ a:hover {
     color: #2d353c;
 }
 
+/* Responsive
+ ========================================================================== */
+@media screen and (min-height: 2560px) {
+    .uk-height-viewport {
+        height: auto !important;
+    }
+}
