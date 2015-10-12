@@ -176,6 +176,9 @@ ul.list-m-20 li {
 .p-5 {
   padding: 5px !important; }
 
+.p-20 {
+  padding: 20px !important; }
+
 .p-lr-0 {
   padding-left: 0px !important;
   padding-right: 0px !important; }
@@ -492,3 +495,58 @@ a:hover {
 .timeline-footer a:not(.btn):focus,
 .timeline-footer a:not(.btn):hover {
   color: #2d353c; }
+
+/* Floating Nav
+ ========================================================================== */
+div.floating-nav {
+  width: 100px;
+  position: fixed;
+  right: 0;
+  z-index: 1000;
+  bottom: 0;
+  margin-bottom: 300px; }
+
+/* Responsive
+ ========================================================================== */
+@media screen and (min-height: 2560px) {
+  .uk-height-viewport {
+    height: auto !important; } }
+@media screen and (max-width: 768px) {
+  .timeline .timeline-body {
+    margin-left: 27%; }
+
+  div#profile.uk-height-viewport {
+    height: 100vh !important; }
+
+  .uk-height-viewport {
+    height: auto !important; } }
+@media screen and (max-width: 800px) {
+  div#profile.uk-height-viewport {
+    height: auto !important; }
+
+  .uk-height-viewport {
+    height: auto !important; }
+
+  .timeline .timeline-body {
+    margin-left: 27%; } }
+@media screen and (max-width: 600px) {
+  div#profile.uk-height-viewport {
+    height: auto !important; }
+
+  .uk-height-viewport {
+    height: auto !important; }
+
+  div.floating-nav {
+    display: none; }
+
+  .timeline .timeline-icon,
+  .timeline .timeline-time {
+    display: none; }
+
+  .timeline .timeline-body:before,
+  .timeline:before {
+    content: none; }
+
+  .timeline .timeline-body {
+    margin-left: 0px;
+    margin-right: 0px; } }
