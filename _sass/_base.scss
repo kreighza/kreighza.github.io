@@ -302,6 +302,18 @@ a:hover {
     color: #2d353c;
 }
 
+/* Floating Nav
+ ========================================================================== */
+div.floating-nav {
+    width: 100px;
+    position: fixed;
+    right: 0;
+    z-index: 1000;
+    bottom: 0;
+    margin-bottom: 300px;
+}
+
+
 /* Responsive
  ========================================================================== */
 @media screen and (min-height: 2560px) {
@@ -322,4 +334,31 @@ a:hover {
     .uk-height-viewport {
         height: auto !important;
     }
+}
+
+@media screen and (min-width: 320px) {
+    .uk-height-viewport {
+        height: auto !important;
+    }
+    
+    div.floating-nav {
+        display: none;
+    }
+    
+    .timeline .timeline-icon,
+    .timeline .timeline-time {
+        display: none;
+    }
+    
+    .timeline .timeline-body:before,
+    .timeline:before {
+        content: none;
+    }
+    
+    .timeline .timeline-body {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    
 }
