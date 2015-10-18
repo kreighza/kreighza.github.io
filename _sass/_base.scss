@@ -316,13 +316,13 @@ div.floating-nav {
 
 /* Responsive
  ========================================================================== */
-@media screen and (min-height: 2560px) {
+@media (min-width: 1220px) {
     .uk-height-viewport {
         height: auto !important;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     .timeline .timeline-body {
         margin-left: 27%;
     }
@@ -333,6 +333,11 @@ div.floating-nav {
     
     .uk-height-viewport {
         height: auto !important;
+    }
+    
+    .timeline .timeline-body {
+        margin-left: 27%;
+        margin-right: 3%;
     }
 }
 
