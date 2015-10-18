@@ -356,6 +356,24 @@ div.floating-nav {
     
 }
 
+@media (max-width: 640px) {
+    .timeline .timeline-body {
+        margin-left: 28%;
+        margin-right: 0px;
+    }
+    
+    .timeline .timeline-time .date-only,
+    .timeline .timeline-time .time {
+        font-size: 18px;
+        margin-right: 10px;
+    }
+    
+    .timeline .timeline-time .date-only,
+    .timeline .timeline-time .date {
+        margin-right: 10px;
+    }
+}
+
 @media (max-width: 600px) {
     div#profile.uk-height-viewport {
         height: auto !important;
