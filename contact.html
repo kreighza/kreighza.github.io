@@ -3,4 +3,42 @@ layout: default
 active: contact
 ---
 
-contactss...
+<div id="contact-form" class="uk-height-viewport uk-cover-background uk-position-relative bg-mail font-family-light">
+      <div class="uk-position-cover" style="z-index: 100;">
+          
+        
+        <div class="uk-width-1-1 uk-container uk-container-center">
+            
+            <div class="uk-text-center font-size-big font-color-white m-t-150">
+                <div class="bg-green" style="margin:0px auto 30px auto; width: 90px; height: 90px; border-radius: 50%; line-height: 90px; ">
+                    <i class="uk-icon-envelope-o m-b-30"></i>
+                </div>
+                
+                Shoot me an message!
+            </div>
+            
+            <form class="uk-form uk-form-horizontal m-t-50 font-size-regular uk-width-1-2 uk-container uk-container-center" action="//formspree.io/wiiGenocide@gmail.com" method="POST">
+
+                <fieldset> 
+                    <div class="uk-form-row font-color-white">                        
+                            <input type="text" class="uk-form-large uk-width-1-1" id="name" name="name" placeholder="Your name" required="required">
+                    </div>
+
+                    <div class="uk-form-row font-color-white">
+                            <input type="email" class="uk-form-large uk-width-1-1" id="email" name="email" placeholder="Your email" required="required">
+                    </div>
+
+                    <div class="uk-form-row font-color-white">
+                            <textarea id="message" class="uk-form-large uk-width-1-1" cols="30" rows="5" name="message" placeholder="Your message" required="required"></textarea>
+                    </div>
+
+                    <div class="uk-form-row">
+                            <input class="uk-button uk-width-1-1 p-10"  type="submit" value="Send">
+                    </div>
+                </fieldset>
+
+            </form>
+        </div>
+      </div>
+   <div class="blue-overlay"></div>
+</div>

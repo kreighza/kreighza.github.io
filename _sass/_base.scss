@@ -36,8 +36,6 @@ html {
     height: 100%;
 }
 
-
-
 /* Tablet and bigger */
 @media (min-width: 768px) {
 
@@ -323,6 +321,10 @@ div.floating-nav {
 @media (min-width: 1220px) {
     .uk-height-viewport {
         height: auto !important;
+    }
+    
+    div#contact-form.uk-height-viewport {
+        height: 90vh !important;
     }
 }
 

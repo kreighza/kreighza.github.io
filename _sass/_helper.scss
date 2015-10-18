@@ -85,6 +85,10 @@ h4.font-color-white {
     margin-top: $nav-height;
 }
 
+.m-t-50 {
+    margin-top: 50px !important;
+}
+
 .m-t-100 {
     margin-top: 100px !important;
 }
@@ -96,6 +100,11 @@ h4.font-color-white {
 .m-b-100 {
     margin-bottom: 100px !important;
 }
+
+.m-b-30 {
+    margin-bottom: 30px !important;
+}
+
 
 .m-r-10 {
     margin-right: 10px !important;
@@ -145,6 +154,11 @@ h4.font-color-white {
 .bg-skill {
     height: 40%; 
     background-image: url($img-skill);
+}
+
+.bg-mail {
+    height: 40%; 
+    background-image: url($img-mail);
 }
 
 .bg-projects {
@@ -223,6 +237,10 @@ ul.list-m-20 li {
 
 .p-20 {
     padding: 20px !important;
+}
+
+.p-10 {
+    padding: 10px !important;
 }
 
 .p-lr-0 {
