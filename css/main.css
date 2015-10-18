@@ -68,6 +68,9 @@ h4.font-color-white {
 .m-t-60 {
   margin-top: 60px; }
 
+.m-t-50 {
+  margin-top: 50px !important; }
+
 .m-t-100 {
   margin-top: 100px !important; }
 
@@ -76,6 +79,9 @@ h4.font-color-white {
 
 .m-b-100 {
   margin-bottom: 100px !important; }
+
+.m-b-30 {
+  margin-bottom: 30px !important; }
 
 .m-r-10 {
   margin-right: 10px !important; }
@@ -116,6 +122,10 @@ h4.font-color-white {
 .bg-skill {
   height: 40%;
   background-image: url("../images/skill.jpg"); }
+
+.bg-mail {
+  height: 40%;
+  background-image: url("../images/mail.jpg"); }
 
 .bg-projects {
   height: 40%;
@@ -178,6 +188,9 @@ ul.list-m-20 li {
 
 .p-20 {
   padding: 20px !important; }
+
+.p-10 {
+  padding: 10px !important; }
 
 .p-lr-0 {
   padding-left: 0px !important;
@@ -513,7 +526,10 @@ div.floating-nav {
  ========================================================================== */
 @media (min-width: 1220px) {
   .uk-height-viewport {
-    height: auto !important; } }
+    height: auto !important; }
+
+  div#contact-form.uk-height-viewport {
+    height: 90vh !important; } }
 @media (max-width: 768px) {
   .timeline .timeline-body {
     margin-left: 27%; }
