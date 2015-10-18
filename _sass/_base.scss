@@ -341,7 +341,7 @@ div.floating-nav {
     }
 }
 
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
     div#profile.uk-height-viewport {
         height: auto !important;
     }
@@ -356,7 +356,7 @@ div.floating-nav {
     
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
     div#profile.uk-height-viewport {
         height: auto !important;
     }
@@ -382,6 +382,11 @@ div.floating-nav {
     .timeline .timeline-body {
         margin-left: 0px;
         margin-right: 0px;
+        text-align: left;
+    }
+    
+    .timeline-header div.timeline-header-company-logo img {
+        margin-left: 0px;
     }
     
 }
