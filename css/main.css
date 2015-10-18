@@ -506,12 +506,15 @@ div.floating-nav {
   bottom: 0;
   margin-bottom: 300px; }
 
+.uk-navbar-toggle.uk-visible-small {
+  padding-left: 0; }
+
 /* Responsive
  ========================================================================== */
-@media screen and (min-height: 2560px) {
+@media (min-width: 1220px) {
   .uk-height-viewport {
     height: auto !important; } }
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .timeline .timeline-body {
     margin-left: 27%; }
 
@@ -519,8 +522,12 @@ div.floating-nav {
     height: 100vh !important; }
 
   .uk-height-viewport {
-    height: auto !important; } }
-@media screen and (max-width: 800px) {
+    height: auto !important; }
+
+  .timeline .timeline-body {
+    margin-left: 27%;
+    margin-right: 3%; } }
+@media (max-width: 800px) {
   div#profile.uk-height-viewport {
     height: auto !important; }
 
@@ -529,7 +536,20 @@ div.floating-nav {
 
   .timeline .timeline-body {
     margin-left: 27%; } }
-@media screen and (max-width: 600px) {
+@media (max-width: 640px) {
+  .timeline .timeline-body {
+    margin-left: 28%;
+    margin-right: 0px; }
+
+  .timeline .timeline-time .date-only,
+  .timeline .timeline-time .time {
+    font-size: 18px;
+    margin-right: 10px; }
+
+  .timeline .timeline-time .date-only,
+  .timeline .timeline-time .date {
+    margin-right: 10px; } }
+@media (max-width: 600px) {
   div#profile.uk-height-viewport {
     height: auto !important; }
 
@@ -549,4 +569,8 @@ div.floating-nav {
 
   .timeline .timeline-body {
     margin-left: 0px;
-    margin-right: 0px; } }
+    margin-right: 0px;
+    text-align: left; }
+
+  .timeline-header div.timeline-header-company-logo img {
+    margin-left: 0px; } }
