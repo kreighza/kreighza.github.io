@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="/assets/uikit/css/components/slideshow.css">
     <link rel="stylesheet" href="/assets/uikit/css/components/slidenav.css">
     <link rel="stylesheet" href="/assets/uikit/css/uikit.css">
+    <link rel="stylesheet" href="/assets/jqvmap/dist/jqvmap.css">
+
     <link rel="stylesheet" href="/css/main.css">
     
     <script src="/assets/jquery/dist/jquery.js"></script>
@@ -31,7 +33,10 @@
     <script src="/assets/uikit/js/core/modal.js"></script>
     <script src="/assets/uikit/js/core/alert.js"></script>
     <script src="/assets/uikit/js/core/smooth-scroll.min.js"></script>
-    
+
+    <script src="/assets/jqvmap/dist/jquery.vmap.js"></script>
+    <script src="/assets/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+
     <link rel="canonical" href="http://http://kreighza.github.io/itenerary/">
     <link rel="alternate" type="application/rss+xml" title="KR Dvorak" href="http://http://kreighza.github.io/feed.xml" />
 </head>
@@ -60,7 +65,7 @@
                     
 
                 <li class=" uk-active ">
-                    <a class="uk-active" href="/itenerary/">itenerary</a>
+                    <a class="uk-active" href="/itenerary/">travel stuff</a>
                 </li>
             
                 
@@ -100,7 +105,7 @@
                     
 
                 <li class=" uk-active ">
-                    <a class="uk-active" href="/itenerary/">itenerary</a>
+                    <a class="uk-active" href="/itenerary/">travel stuff</a>
                 </li>
             
                 
@@ -141,7 +146,7 @@
                                 <div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a">
                                     <div class="places-visited-total hi-icon hi-icon-mobile" id="trivia1">0</div>
                                 </div>
-                                <div>Total places visited</div>
+                                <div>Total countries visited</div>
                             </div>
                             
                             <div class="uk-width-medium-1-3">
@@ -171,18 +176,17 @@
    <div class="uk-container uk-container-center font-family-light uk-text-center font-size-medium font-color-white"
         style="padding: 35px 0px 35px 0px;">
        <div class="uk-display-inline m-r-10"><i class="uk-icon-map-marker"></i></div> 
-       <div class="uk-display-inline">Places I have been to</div>
+       <div class="uk-display-inline">Kreisa has been to <span class="places-visited-total"></span> countries.</div>
    </div>
 </div>
 
-<div id="map" style="height: 70%;">
-</div>
+<div id="map" style="width: 100%; height: 500px;"></div>
 
 <div class="bg-dark-red">
        <div class="uk-container uk-container-center font-family-light uk-text-center font-size-medium font-color-white"
             style="padding: 35px 0px 35px 0px;">
            <div class="uk-display-inline m-r-10"><i class="uk-icon-camera"></i></div> 
-           <div class="uk-display-inline">A gallery of my memories</div>
+           <div class="uk-display-inline">Gallery</div>
        </div>
 </div>
 
@@ -320,9 +324,9 @@
     </div>
 </div>
 
-<script src="/javascript/travelBook/visitedPlaces.js"></script>
+<script src="/javascript/travelBook/place.js"></script>
 <script src="/javascript/travelBook/travelBook.js"></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?AIzaSyDHNeP7Tfl6Y-d-h7oXJlSxLyCc8rGkjTY&callback=travelBook.init"></script>
+
     
     <div class="uk-width-1-1 bg-black font-color-white">
     <div class="uk-container uk-container-center uk-text-center p-t-50 p-b-50 font-weight-100">
