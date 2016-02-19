@@ -3,7 +3,6 @@
     var $contactForm = $('#contact-me-form');
     var $alertMessage = $('#contact-me-form-alert');
     var $alertText = $alertMessage.find('p');
-    var $alertCloseButton = $alertMessage.find('a');
     
     var sendingMessage = 'Sending message...';
     var successMessage = 'Your message was successfully sent!';
