@@ -313,7 +313,64 @@ div.floating-nav {
 
 .uk-navbar-toggle.uk-visible-small {
     padding-left: 0;
-} 
+}
+
+/* Blog Posts
+ ========================================================================== */
+
+div.blog {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+div.blog > div.blog-post-wrapper,
+div.blog > h1.blog-heading {
+    font-family: "Source Sans Pro", sans-serif !important;
+    font-weight: 200;
+}
+
+div.blog > h1.blog-heading {
+    font-size: 52pt;
+    color: $blue;
+}
+
+div.blog > div.blog-post-wrapper > div.blog-post {
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+div.blog > div.blog-post-wrapper > div.blog-post > div.uk-panel {
+    padding: 0px;
+}
+
+div.blog > div.blog-post-wrapper > div.blog-post > div.uk-panel > div.img-container {
+    height: 300px;
+    overflow: hidden;
+}
+
+div.blog > div.blog-post-wrapper > div.blog-post > div.uk-panel > div.img-container > img {
+    width: 100%;
+}
+
+div.blog > div.blog-post-wrapper > div.blog-post > div.uk-panel > div.blog-post-info {
+    margin: 0px;
+    text-align: center;
+    background-color: #e7e7e7;
+    padding: 20px 10px;
+}
+
+div.blog > div.blog-post-wrapper > div.blog-post > div.uk-panel > div.blog-post-info > a.post-link {
+    font-size: 20pt;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
 
 /* Responsive
