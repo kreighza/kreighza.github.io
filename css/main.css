@@ -601,7 +601,8 @@ div.post article {
   font-size: 13pt;
   line-height: 17pt;
   color: #383D41;
-  margin-top: 50px; }
+  margin-top: 50px;
+  margin-bottom: 100px; }
 
 /* Responsive
  ========================================================================== */
