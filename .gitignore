@@ -2,3 +2,4 @@ _site
 .sass-cache
 .idea/
 *.iml
+.idea/workspace.xml
