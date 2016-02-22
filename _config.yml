@@ -33,29 +33,29 @@ travelBook_trivia:
   id: trivia3
   
 travelBook_photos1:
-- place: hongkong skyline
+- place: Chinatown, Singapore
   image: ../images/travelBook/photos/photo1.jpg
-- place: gardens by the bay singapore
+- place: Merlion
   image: ../images/travelBook/photos/photo2.jpg
-- place: helix bridge singapore
+- place: Chicken Rice, yum!
   image: ../images/travelBook/photos/photo3.jpg
   
 travelBook_photos2:
-- place: singapore skyline
+- place: Legoland, Johor Bahru Malaysia
   image: ../images/travelBook/photos/photo4.jpg
-- place: thailand
+- place: Replica of the Forbidden City in Legoland
   image: ../images/travelBook/photos/photo5.jpg
-- place: singapore
+- place: Replica of Taj Mahal in Legoland
   image: ../images/travelBook/photos/photo6.jpg
-- place: thailand
+- place: Replica of Singapore in Legoland
   image: ../images/travelBook/photos/photo7.jpg
 
 travelBook_photos3:
-- place: vietnam
+- place: Replica of Thai Temple in Legoland
   image: ../images/travelBook/photos/photo8.jpg
-- place: vietnam
+- place: A Series of Buddha Statues in Thailand
   image: ../images/travelBook/photos/photo9.jpg
-- place: vietnam
+- place: A lotus flower in Thailand
   image: ../images/travelBook/photos/photo10.jpg
   
 navigation:
