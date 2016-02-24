@@ -1,0 +1,40 @@
+---
+layout: post
+title:  'Starstrand City'
+date:   2016-02-25 05:04:40
+category: cities skylines
+img: '../images/blog-posts/post1/cover.png'
+---
+
+![]({{ base.url }}/images/blog-posts/post1/cover.png)
+*Starstrand City: Downtown*
+
+A new DLC of Cities Skylines just came out and I am extremely happy that
+somebody gave it to me as a gift! I've been playing this game ever since it first came
+out and I even bought the other DLC. I think this DLC is so freaking cool! Snow and trams
+have been in my wish list ever since I saw them on SimCity.
+
+The city I'm building right now is
+called Starstrand. It's a city with a population of 30,000 people all crammed
+into this one tiny island. My city planning skills are abysmal at the moment but I've been
+trying to look up real world cities and interchanges. I think I'm getting there.
+
+![]({{ base.url }}/images/blog-posts/post1/screenshot1.png)
+*A Ski Resort (Is that how westerners call it?) right at the edge of the hustle and bustle.*
+
+I built a ski resort right next to the train station in the city center. I was trying to attract more
+tourists, but I think it would be better if I move it somewhere more remote. I could build a hill or
+a mountain and then place winding dirt roads towards the entrance. It sounds cliche, but if
+I were a tourist who would go to these kind of places, I wouldn't want to here the
+honk of a dozen lorries delivering stuff to a nearby commercial building.
+
+![]({{ base.url }}/images/blog-posts/post1/screenshot2.png)
+*Traffic is building up as the sun comes down.*
+
+And then, there's the coast line. I really like tracing coastlines, I think they look cool and very
+realistic. I have added trams on the two lane road so that more cims get forced to see
+the river as they commute to school or work. It's not much of a view, but it's something.
+I plan to add a small dock where cims can go fishing or something, but unfortunately the water
+is too far from the road, which makes plopping of assets a pain the ass. I'll probably have
+to terraform this thing - something I'm not very confident about, considering that there's no undo
+button in this game!
