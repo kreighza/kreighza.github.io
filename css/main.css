@@ -558,7 +558,7 @@ div.blog > div.blog-post-wrapper > div.blog-post > div.uk-panel > div.img-contai
   overflow: hidden; }
 
 div.blog > div.blog-post-wrapper > div.blog-post > div.uk-panel > div.img-container > img {
-  width: 100%; }
+  height: 100%; }
 
 div.blog > div.blog-post-wrapper > div.blog-post > div.uk-panel > div.blog-post-info {
   margin: 0px;
@@ -603,6 +603,19 @@ div.post article {
   color: #383D41;
   margin-top: 50px;
   margin-bottom: 100px; }
+
+div.post article img + em {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #383D41;
+  font-style: normal;
+  text-align: center;
+  font-size: 10pt; }
+
+div.post article img {
+  margin-top: 20px; }
 
 /* Responsive
  ========================================================================== */
