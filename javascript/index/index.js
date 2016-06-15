@@ -4,8 +4,18 @@
     var userId = '100005913222548';
     var accessToken = 'EAACEdEose0cBADUFjLyC1slvZAybNk9lpCKEnqkDbU4SBO5BHbcBmSJpc2GwYVyRgFalQhW1jSi8sekWSm4VaUnVOcTxeL3JpFVGk6OFu7g4i1ojgiWa1sL6VZC9WgKg35BnpioMFIlqs4ba0vjX9kpuvjdWJ9UXpslTZBTOgZDZD';
     
+    getProfilePic();
+    
     function getProfilePic() {
-        console.debug('url: ', formUrl());
+        var picUrl = formUrl();
+        
+        $.get(picUrl, displayProfilePic);
+    }
+    
+    function displayProfilePic(response) {
+        var imgSrc = response.data.url;
+        
+        $('#profile-pic').attr('src', imgSrc);
     }
     
     function formUrl() {
@@ -17,11 +27,12 @@
             pretty: 0,
             redirect: false,
             suppress_http_code: 1,
-            width: 9999
+            width: 300,
+            height: 300
         };
         
         var paramsAsString = jQuery.param(params);
-        var fullUrl = baseUrl + '/picture?' + paramsAsString;
+        var fullUrl = baseUrl + userId + '/picture?' + paramsAsString;
         
         return fullUrl;
     }
