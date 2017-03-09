@@ -35,28 +35,38 @@ travelBook_trivia:
 travelBook_photos1:
 - place: Chinatown, Singapore
   image: ../images/travelBook/photos/photo1.jpg
+  id   : photo1
 - place: Merlion
   image: ../images/travelBook/photos/photo2.jpg
+  id   : photo2
 - place: Chicken Rice, yum!
   image: ../images/travelBook/photos/photo3.jpg
+  id   : photo3
   
 travelBook_photos2:
 - place: Legoland, Johor Bahru Malaysia
   image: ../images/travelBook/photos/photo4.jpg
+  id   : photo4
 - place: Replica of the Forbidden City in Legoland
   image: ../images/travelBook/photos/photo5.jpg
+  id   : photo5
 - place: Replica of Taj Mahal in Legoland
   image: ../images/travelBook/photos/photo6.jpg
+  id   : photo6
 - place: Replica of Singapore in Legoland
   image: ../images/travelBook/photos/photo7.jpg
+  id   : photo7
 
 travelBook_photos3:
 - place: Replica of Thai Temple in Legoland
   image: ../images/travelBook/photos/photo8.jpg
+  id   : photo8
 - place: A Series of Buddha Statues in Thailand
   image: ../images/travelBook/photos/photo9.jpg
+  id   : photo9
 - place: A lotus flower in Thailand
   image: ../images/travelBook/photos/photo10.jpg
+  id   : photo10
   
 navigation:
 - text: home
