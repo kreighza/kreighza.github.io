@@ -33,6 +33,11 @@ $(function(){
             placesVisited['th'] = blue;
             placesVisited['vn'] = blue;
             placesVisited['my'] = blue;
+            placesVisited['bn'] = blue;
+            placesVisited['tw'] = blue;
+            placesVisited['hk'] = blue;
+            placesVisited['sg'] = blue;
+            placesVisited['mfm'] = blue;
 
             return placesVisited;
         }

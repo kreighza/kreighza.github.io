@@ -28,7 +28,7 @@ travelBook_trivia:
 - answer: eat
   question: Must do when traveling
   id: trivia2
-- answer: BWN
+- answer: JP
   question: Next Destination
   id: trivia3
   
@@ -42,6 +42,9 @@ travelBook_photos1:
 - place: Chicken Rice, yum!
   image: ../images/travelBook/photos/photo3.jpg
   id   : photo3
+- place: Amei Teahouse in Jiufen, Taiwan
+  image: ../images/travelBook/photos/photo12.jpg
+  id   : photo12
   
 travelBook_photos2:
 - place: Legoland, Johor Bahru Malaysia
@@ -67,6 +70,9 @@ travelBook_photos3:
 - place: A lotus flower in Thailand
   image: ../images/travelBook/photos/photo10.jpg
   id   : photo10
+- place: Amei Teahouse in Jiufen, Taiwan
+  image: ../images/travelBook/photos/photo11.jpg
+  id   : photo11
   
 navigation:
 - text: home
